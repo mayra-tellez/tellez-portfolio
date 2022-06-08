@@ -18,26 +18,36 @@ function App() {
 
   return (
     <div className="App">
+      {/* <div className='shelf-container'>
+        <div className='books'>
+          <div className='bookOne'></div>
+          <div className='bookTwo'></div>
+        </div>
+        <div className='plant'></div>
+        <div className='shelf'></div>
+      </div>
+      <div className='computer'></div>
+      <div className='desk'></div> */}
       <header>
-        <p>Mayra Téllez</p>
-        <p>Based in Austin, TX</p>
-        <p>Currently a Software Developer at Zollege</p>
+        <p className="initials">MT</p>
         <nav>
-          <a href="">About</a>
-          <a href="">Work</a>
-          <a href="">Resume</a>
+          <a href="" target="blank">About</a>
+          <a href="" target="blank">Projects</a>
+          <a href="https://drive.google.com/file/d/16DrnpUuT90FjTkEQad46STrS7eqSbZ_7/view?export/pdf" target="blank">Resume</a>
         </nav>
       </header>
       <main>
-        <h3>Thanks for stopping by!</h3>
-        <a href="">View my work</a>
+        <p className="greeting">good {timeOfDay()}!</p>
+        <p>I'm Mayra Téllez <br/> & I develop the web's <br/> front end.</p>
+        <i class="fas fa-chevron-down"></i>
       </main>
       <footer>
-        <p>Enjoy your {timeOfDay()}!</p>
         <p>Get in touch.</p>
         <div>Home page toggle.</div>
       </footer>
-      <ProjectCard></ProjectCard>
+      {/* <div className="folder"></div> */}
+      {/* <ProjectCard></ProjectCard> */}
+      {/* <span className="greeting">good {timeOfDay()}</span> */}
     </div>
   );
 }

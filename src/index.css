@@ -2,10 +2,4 @@ body {
   margin: 0;
   height: 100vh;
   font-family: 'Nunito', sans-serif;
-  background:
-  linear-gradient(175deg, rgb(179, 205, 254), rgba(0,255,0,0) 70.71%),
-  linear-gradient(217deg, rgb(230, 254, 165), rgba(255,0,0,0) 70.71%),
-  linear-gradient(95deg, rgb(213, 192, 255), rgba(0,0,255,0) 70.71%),
-  linear-gradient(230deg, rgb(253, 169, 130), rgba(0,0,255,0) 70.71%),
-  linear-gradient(216deg, rgb(250, 161, 255), rgba(0,0,255,0) 70.71%);
 }
