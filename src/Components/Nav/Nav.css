@@ -20,6 +20,6 @@ nav > a, header > .link {
   font-family: 'Libre Baskerville', serif;
   font-weight: bold;
   font-size: larger;
-  font-style: italic;
+  /* font-style: italic; */
   /* color: rgb(137, 178, 253); */
 }
