@@ -1,0 +1,25 @@
+header, footer {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > nav {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > a, header > .link {
+  text-decoration: none;
+  color: #333;
+}
+
+.initials {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  font-size: larger;
+  font-style: italic;
+  /* color: rgb(137, 178, 253); */
+}
