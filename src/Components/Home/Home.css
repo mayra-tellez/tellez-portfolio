@@ -1,0 +1,93 @@
+.Home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header, footer {
+  width: 85%;
+  /* margin: 0 2%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > nav {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  height: 85%;
+  width: 93%;
+  border-radius: 2px;
+  /* align-self: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background:
+  linear-gradient(175deg, rgb(179, 205, 254), rgba(0,255,0,0) 75%),
+  linear-gradient(217deg, rgb(230, 254, 165), rgba(255,0,0,0) 75.71%),
+  linear-gradient(95deg, rgb(213, 192, 255), rgba(0,0,255,0) 70.71%),
+  linear-gradient(230deg, rgb(253, 169, 130), rgba(0,0,255,0) 100%),
+  linear-gradient(216deg, rgb(250, 161, 255), rgba(0,0,255,0) 90.71%);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 60px;
+  color: white;
+  /* text-align: center; */
+}
+
+main > p {
+  margin: 2% 0;
+  padding: 0 5%;
+}
+
+.initials {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  font-size: larger;
+  /* color: rgb(137, 178, 253); */
+}
+
+.greeting {
+  /* font-family: 'Nunito', sans-serif; */
+  font-size: 30px;
+  /* font-weight: 600; */
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  /* color: rgb(255, 240, 240); */
+}
+
+.folder {
+  /* width: 260px;
+  height: 205px; */
+  width: 75%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  background-color: #fff0be;
+  border-radius: 2px 6px 6px 6px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.452);
+}
+
+.folder:before {
+  content: '';
+  width: 25%;
+  height: 25px;
+  border-radius: 5px 5px 0 0;
+  background-color: #fff0be;
+  position: absolute;
+  top: -25px;
+  left: 15px;
+  box-shadow: 5px 0 4px -5px #333;
+}

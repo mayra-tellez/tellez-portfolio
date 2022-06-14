@@ -1,5 +1,4 @@
-import React from "react";
-import projects from "../projects.json";
+import projects from "../../projects.json";
 import "./ProjectCard.css";
 
 const ProjectCard = () => {
