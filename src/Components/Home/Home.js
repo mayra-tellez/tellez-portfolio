@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import Header from "../Nav/Header";
+import Footer from "../Nav/Footer";
 import './Home.css';
 
 const Home = () => {
@@ -18,25 +19,13 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <header>
-        <Link to="/">
-          <p className="initials">MT</p>
-        </Link>
-        <nav>
-          <Link to="/projects">Projects</Link>
-          <Link to="/about">About</Link>
-          <a href="https://drive.google.com/file/d/16DrnpUuT90FjTkEQad46STrS7eqSbZ_7/view?export/pdf" target="blank">Resume</a>
-        </nav>
-      </header>
+      <Header></Header>
       <main>
         <p className="greeting">good {timeOfDay()}!</p>
         <p>I'm Mayra Téllez <br/> & I develop the web's <br/> front end.</p>
         <i class="fas fa-chevron-down"></i>
       </main>
-      <footer>
-        <p>Get in touch.</p>
-        <div>Home page toggle.</div>
-      </footer>
+      <Footer></Footer>
     </div>
   );
 }
