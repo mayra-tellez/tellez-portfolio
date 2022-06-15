@@ -1,5 +1,14 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel, Pagination } from "swiper";
+
+import projects from "../../projects.json";
 import Header from "../Nav/Header";
 import Footer from "../Nav/Footer";
+import FeatureProjectCard from "../Projects/FeatureProjectCard";
+
+
+import "swiper/css";
+import "swiper/css/pagination";
 import './Home.css';
 
 const Home = () => {
@@ -17,13 +26,40 @@ const Home = () => {
     }
   }
 
+  const projectList = projects.projects;
+
   return (
     <div className="Home">
       <Header></Header>
       <main>
-        <p className="greeting">good {timeOfDay()}!</p>
-        <p>I'm Mayra Téllez <br/> & I develop the web's <br/> front end.</p>
-        <i class="fas fa-chevron-down"></i>
+        <>
+          <Swiper
+            direction={"vertical"}
+            slidesPerView={1}
+            mousewheel={true}
+            pagination={{
+              clickable: true,
+              // dynamicBullets: true,
+            }}
+            modules={[Mousewheel, Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <p id="greeting">good {timeOfDay()}!</p>
+              <p id="intro">I'm Mayra Téllez <br/> & I develop the web's <br/> front end.</p>
+              <i class="fas fa-chevron-down"></i>
+            </SwiperSlide>
+            {projectList.map((project, i) => {
+              return (
+                <SwiperSlide>
+                  <FeatureProjectCard project={project} key={i}></FeatureProjectCard>
+                </SwiperSlide>
+              )
+            })}
+            {/* <SwiperSlide>Slide 3</SwiperSlide>
+            <SwiperSlide>Slide 4</SwiperSlide> */}
+          </Swiper>
+        </>
       </main>
       <Footer></Footer>
     </div>

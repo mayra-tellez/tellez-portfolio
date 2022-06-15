@@ -1,10 +1,10 @@
-import "./ProjectCard.css";
+import "./FeatureProjectCard.css";
 
-const ProjectCard = (props) => {
+const FeatureProjectCard = (props) => {
   const { name, code_url, live_url, tags, description, image } = props.project;
 
   return (
-    <div className="ProjectCard">
+    <div className="FeatureProjectCard">
       <h3>{name}</h3>
       <a href={code_url} target="blank">Code Repo</a>
       <a href={live_url} target="blank">Live Site</a>
@@ -16,7 +16,7 @@ const ProjectCard = (props) => {
       </ul>
       <img alt="project thumbnail" src={image}></img>
     </div>
-  );
+  )
 }
 
-export default ProjectCard;
+export default FeatureProjectCard;

@@ -9,7 +9,7 @@
 .Home > main {
   height: 85%;
   width: 93%;
-  border-radius: 2px;
+  border-radius: 3px;
   /* align-self: center; */
   display: flex;
   flex-direction: column;
@@ -22,21 +22,28 @@
   linear-gradient(230deg, rgb(253, 169, 130), rgba(0,0,255,0) 100%),
   linear-gradient(216deg, rgb(250, 161, 255), rgba(0,0,255,0) 90.71%);
   font-family: 'Libre Baskerville', serif;
-  font-size: 60px;
   color: white;
   /* text-align: center; */
 }
 
 main > p {
-  margin: 2% 0;
-  padding: 0 5%;
+  /* margin: 2% 0;
+  padding: 0 5%; */
 }
 
-.greeting {
+.mySwiper {
+  width: 100%;
+}
+
+#greeting {
   /* font-family: 'Nunito', sans-serif; */
   font-size: 30px;
   /* font-weight: 600; */
   font-style: italic;
   color: rgb(255, 255, 255);
   /* color: rgb(255, 240, 240); */
+}
+
+#intro {
+  font-size: 60px;
 }
