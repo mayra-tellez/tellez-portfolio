@@ -7,7 +7,8 @@
       "live_url": "https://mayra-tellez.github.io/landingpage/html/landing.html",
       "tags": ["Bootstrap 5", "CSS", "HTML"],
       "description": "The first website I worked on in my internship at Zollege; Working off of a high-fidelity mockup, I developed the landing page and navigation menu for this new Zospace website to look great at all screen sizes. This project was achieved with a team of 5 developers, and I learned a lot about decision making as a team. /// Pixel perfect implementation of a product landing page design for Zospace Apps at Zollege",
-      "image": "../../images/landingPageThumbnail.png"
+      "image_path": "landingPageThumbnail",
+      "image_alt": "Zospace landing page thumbnail"
     },
     {
       "id": 1,
@@ -16,7 +17,8 @@
       "live_url": "https://bills-tracker.vercel.app/",
       "tags": ["React", "Node.js", "Express", "SQL", "REST API"],
       "description": "Billy - a full-stack application for tracking monthly bills. /// I designed and coded Elliot Smith Player, my capstone project at Austin Coding Academy, as a web player for artist Elliot Smith's discography. Searching for Elliot's songs, creating/saving customized playlists, and of course listening to the music are a few of the features available on the app.",
-      "image": "image"
+      "image_path": "billyDashboard",
+      "image_alt": "Billy App dashboard thumbnail"
     },
     {
       "id": 2,
@@ -25,7 +27,8 @@
       "live_url": "https://small-business-zeta.vercel.app/",
       "tags": ["React", "Redux", "Material UI"],
       "description": "Local Small Business App created from a mockup design /// Small business directory app built from a mockup with react-redux and material-ui",
-      "image": "image"
+      "image_path": "ies",
+      "image_alt": "Small business thumbnail"
     },
     {
       "id": 3,
@@ -34,7 +37,8 @@
       "live_url": "https://music-app-ivory.vercel.app/",
       "tags": ["React", "Material UI"],
       "description": "Simple music dashboard app built using material-ui /// Music Dashboard App created from mockup design",
-      "image": "image"
+      "image_path": "musicApp",
+      "image_alt": "Music app thumbnail"
     }
   ] 
 }
