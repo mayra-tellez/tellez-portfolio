@@ -18,8 +18,22 @@ nav > a, header > .link {
 
 .initials {
   font-family: 'Libre Baskerville', serif;
-  font-weight: bold;
-  font-size: larger;
+  display: block;
+  transition: all .2s ease-out;
+  /* font-weight: bold;
+  font-size: larger; */
   /* font-style: italic; */
   /* color: rgb(137, 178, 253); */
 }
+
+.initials:hover {
+  transform: scale(1.5, 1.5);
+}
+
+/* .initials:hover #M {
+  
+}
+
+.initials:hover #T {
+  
+} */

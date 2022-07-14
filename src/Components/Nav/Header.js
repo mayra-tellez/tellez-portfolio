@@ -5,7 +5,10 @@ const Header = () => {
   return (
     <header>
     <Link to="/" className="link">
-      <p className="initials">MT</p>
+      <h3 className="initials">
+        <span id="M">M</span>
+        <span id="T">T</span>
+      </h3>
     </Link>
     <nav>
       <Link to="/projects">Projects</Link>

@@ -7,7 +7,7 @@
       "live_url": "https://mayra-tellez.github.io/landingpage/html/landing.html",
       "tags": ["Bootstrap 5", "CSS", "HTML"],
       "description": "The first website I worked on in my internship at Zollege; Working off of a high-fidelity mockup, I developed the landing page and navigation menu for this new Zospace website to look great at all screen sizes. This project was achieved with a team of 5 developers, and I learned a lot about decision making as a team. /// Pixel perfect implementation of a product landing page design for Zospace Apps at Zollege",
-      "image": "image"
+      "image": "../../images/landingPageThumbnail.png"
     },
     {
       "id": 1,
