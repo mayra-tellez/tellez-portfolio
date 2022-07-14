@@ -27,3 +27,7 @@
   list-style: none;
   cursor: default;
 }
+
+.ProjectCard > img {
+  width: 400px;
+}

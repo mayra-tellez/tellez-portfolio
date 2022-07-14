@@ -1,7 +1,7 @@
 import "./ProjectCard.css";
 
 const ProjectCard = (props) => {
-  const { name, code_url, live_url, tags, description, image } = props.project;
+  const { name, code_url, live_url, tags, description, image_path, image_alt } = props.project;
 
   return (
     <div className="ProjectCard">
@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
           return <li key={i}>{tag}</li>
         })}
       </ul>
-      <img alt="project thumbnail" src={image}></img>
+      <img alt={image_alt} src={require("../../images/" + image_path + ".png")}></img>
     </div>
   );
 }
