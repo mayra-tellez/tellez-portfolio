@@ -5,18 +5,20 @@ const FeatureProjectCard = (props) => {
 
   return (
     <div className="FeatureProjectCard">
-      <h3>{name}</h3>
-      <div className="links">
-        <a href={code_url} target="blank">Code Repo</a>
-        <a href={live_url} target="blank">Live Site</a>
-      </div>
-      <p>{description}</p>
-      <ul>
-        {tags.map((tag, i) => {
-          return <li key={i}>{tag}</li>
-        })}
-      </ul>
       <img alt={image_alt} src={require("../../images/" + image_path + ".png")}></img>
+      <div className="featureProjectInfo">
+        <h3>{name}</h3>
+        <div className="links">
+          <a href={code_url} target="blank">Code Repo</a>
+          <a href={live_url} target="blank">Live Site</a>
+        </div>
+        <p>{description}</p>
+        <ul>
+          {tags.map((tag, i) => {
+            return <li key={i}>{tag}</li>
+          })}
+        </ul>
+      </div>
     </div>
   )
 }

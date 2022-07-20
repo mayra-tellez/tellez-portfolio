@@ -9,12 +9,14 @@
 .Projects > main {
   height: 85%;
   width: 93%;
-  background:
+  border-radius: 3px;
+  background-color: lavender;
+  /* background:
   linear-gradient(175deg, rgb(179, 205, 254), rgba(0,255,0,0) 75%),
   linear-gradient(217deg, rgb(230, 254, 165), rgba(255,0,0,0) 75.71%),
   linear-gradient(95deg, rgb(213, 192, 255), rgba(0,0,255,0) 70.71%),
   linear-gradient(230deg, rgb(253, 169, 130), rgba(0,0,255,0) 100%),
-  linear-gradient(216deg, rgb(250, 161, 255), rgba(0,0,255,0) 90.71%);
+  linear-gradient(216deg, rgb(250, 161, 255), rgba(0,0,255,0) 90.71%); */
 }
 
 .projectsContainer {
@@ -23,4 +25,22 @@
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+}
+
+
+/* --- Custom Scrollbar --- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }

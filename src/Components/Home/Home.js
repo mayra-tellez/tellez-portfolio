@@ -44,9 +44,12 @@ const Home = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <p id="greeting">good {timeOfDay()}!</p>
-              <p id="intro">I'm Mayra Téllez <br/> & I develop the web's <br/> front end.</p>
-              <i class="fas fa-chevron-down"></i>
+              <section id="firstSlide-home">
+                <p id="greeting">good {timeOfDay()}!</p>
+                <p id="intro">I'm Mayra Téllez <br/> & I develop the web's <br/> front end.</p>
+                <i class="fas fa-chevron-down"></i>
+                <i class="fa-solid fa-angle-down"></i>
+              </section>
             </SwiperSlide>
             {projectList.slice(0, 2).map((project, i) => {
               return (
