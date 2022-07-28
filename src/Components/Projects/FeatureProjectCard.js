@@ -13,7 +13,7 @@ const FeatureProjectCard = (props) => {
           <a href={live_url} target="blank">Live Site</a>
         </div>
         <p>{description}</p>
-        <ul>
+        <ul className="featureTagsList">
           {tags.map((tag, i) => {
             return <li key={i}>{tag}</li>
           })}
