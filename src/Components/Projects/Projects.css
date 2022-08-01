@@ -19,16 +19,16 @@
   linear-gradient(216deg, rgb(250, 161, 255), rgba(0,0,255,0) 90.71%);
 }
 
-.projectsContainer {
-  height: 100%;
-  width: 100%;
+/* .projectsContainer {
+  height: 75%;
+  width: 50%;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-}
+} */
 
 
-/* --- Custom Scrollbar --- */
+/* --- Custom Scrollbar ---
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -47,4 +47,4 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
-}
+} */

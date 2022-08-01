@@ -4,6 +4,28 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  /* background-color: rgb(31,31,31); */
+  /* background-color: #121212; */
+  background-color: #f6f2e7;
+  /* background-color: white; */
+}
+
+.menu-link {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-item {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 5rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1rem;
+  transition: all .2s;
+}
+
+.menu-item:hover {
+  letter-spacing: 0rem;
 }
 
 .Home > main {
@@ -13,19 +35,18 @@
   /* align-self: center; */
   display: flex;
   flex-direction: column;
-  background:
+  /* background:
   linear-gradient(175deg, rgb(179, 205, 254), rgba(0,255,0,0) 50%),
   linear-gradient(217deg, rgb(230, 254, 165), rgba(255,0,0,0) 70%),
   linear-gradient(95deg, rgb(213, 192, 255), rgba(0,0,255,0) 100%),
   linear-gradient(230deg, rgb(253, 169, 130), rgba(0,0,255,0) 100%),
-  linear-gradient(216deg, rgb(250, 161, 255), rgba(0,0,255,0) 50%);
+  linear-gradient(216deg, rgb(250, 161, 255), rgba(0,0,255,0) 50%); */
   /* background:
   linear-gradient(175deg, rgb(179, 205, 254), rgba(0,255,0,0) 75%),
   linear-gradient(217deg, rgb(230, 254, 165), rgba(255,0,0,0) 75.71%),
   linear-gradient(95deg, rgb(213, 192, 255), rgba(0,0,255,0) 70.71%),
   linear-gradient(230deg, rgb(253, 169, 130), rgba(0,0,255,0) 100%),
   linear-gradient(216deg, rgb(250, 161, 255), rgba(0,0,255,0) 90.71%); */
-  /* background-color: sandybrown; */
   /* font-family: 'Libre Baskerville', serif;
   font-weight: lighter; */
   /* color: white; */

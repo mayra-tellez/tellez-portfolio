@@ -1,34 +1,107 @@
 .ProjectCard {
-  box-sizing: border-box;
   margin: 10px;
-  padding: 15px;
+  box-sizing: border-box;
+  /* border: .5px solid; */
+  border: 1px solid;
+  border-radius: 20px;
+  /* padding: 15px; */
   /* width: 500px; */
   /* background-color: rgba(240, 255, 255, 0.5); */
   /* display: flex; */
+  transition: all .3s;
 }
 
-.ProjectCard > a {
-  margin: 5px;
-  padding: 5px 10px;
-  /* border: 1px solid blueviolet; */
-  /* background-color: azure; */
-  text-decoration: none;
+.ProjectCard:hover {
+  /* border: 1px solid plum; */
+  background-color: rgba(255, 227, 255, 0.497);
+}
+
+.ProjectCard:hover .project-name {
+  /* border: 1px solid plum; */
+  border: 1px solid black;
+}
+
+.ProjectCard > .project-name {
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-bottom: 5px;
+  width: fit-content;
+  border: 1px solid var(--background);
+  border-radius: 20px;
+  font-family: var(--heading);
+  font-weight: 500;
+  font-style: italic;
+  position: relative;
+  top: -30px;
+  left: 30px;
+  background-color: var(--background);
+  transition: all .3s;
+}
+
+.project-description {
+  margin: -20px 20px 10px 20px;
 }
 
 .ProjectCard ul {
+  padding: 0;
   display: flex;
 }
 
-.ProjectCard li {
-  margin: 0 5px 0 0;
-  padding: 5px 10px;
+.ProjectCard:hover .tag {
+  background-color: var(--background);
+  border: 1px solid black;
+}
+
+.ProjectCard .tag {
+  /* margin: 0 5px 0 0; */
+  /* padding: 5px 10px; */
+  margin: 0 3px;
+  /* padding: 3px 6px; */
+  padding: 3px 7px;
   width: fit-content;
-  /* border: 1px solid rgb(214, 226, 43); */
-  /* background-color: azure; */
+  border-radius: 20px;
+  border: 1px solid var(--background);
+  background-color: tan;
   list-style: none;
   cursor: default;
+  transition: all .3s;
 }
 
 .ProjectCard > img {
   width: 400px;
+}
+
+.tags-and-links-container {
+  margin: 0 25px 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links-container {
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  margin-left: 5px;
+  margin-right: -5px;
+  text-decoration: none;
+  color: black;
+  font-family: var(--heading);
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:hover + .arrow {
+  top: -5px;
+}
+
+.arrow {
+  margin-left: 10px;
+  position: relative;
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper";
 
@@ -29,9 +30,12 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <Header></Header>
+      {/* <Header></Header> */}
       <main>
-        <>
+        <Link className="menu-link" to="/work"><h1 className="menu-item">work</h1></Link>
+        <Link className="menu-link" to="/about"><h1 className="menu-item">about</h1></Link>
+        <h1 className="menu-item">contact</h1>
+        {/* <>
           <Swiper
             direction={"vertical"}
             slidesPerView={1}
@@ -47,7 +51,6 @@ const Home = () => {
               <section id="firstSlide-home">
                 <p id="greeting">good {timeOfDay()}!</p>
                 <p id="intro">I'm Mayra Téllez <br/> & I develop the web's <br/> front end.</p>
-                {/* <i class="fas fa-chevron-down"></i> */}
                 <i class="fa-solid fa-angle-down"></i>
               </section>
             </SwiperSlide>
@@ -59,9 +62,9 @@ const Home = () => {
               )
             })}
           </Swiper>
-        </>
+        </> */}
       </main>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

@@ -3,3 +3,40 @@ body {
   height: 100vh;
   font-family: 'Nunito', sans-serif;
 }
+
+/* ----- global variables ----- */
+:root {
+  --background: #f6f2e7;
+  --heading: 'Montserrat Alternates', sans-serif;
+}
+
+/* ----- global styles ----- */
+.page-title {
+  font-family: var(--heading);
+  font-size: 6rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* ----- custom scrollbar ----- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1;  */
+  background: var(--background); 
+  /* border-top-right-radius: 5px; */
+  /* border-bottom-right-radius: 5px; */
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  /* border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
