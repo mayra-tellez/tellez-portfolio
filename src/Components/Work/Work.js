@@ -32,7 +32,7 @@ const Work = () => {
     console.log(projectCardsArray);
     
     Array.from(projectCards).forEach(card => {
-      console.log("HERE YE", card);
+      console.log("HERE YE", card.dataset);
       card.addEventListener("mouseover", mouseOver);
     })
 

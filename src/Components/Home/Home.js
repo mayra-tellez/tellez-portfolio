@@ -6,6 +6,9 @@ import projects from "../../projects.json";
 import Header from "../Nav/Header";
 import Footer from "../Nav/Footer";
 import FeatureProjectCard from "../Projects/FeatureProjectCard";
+import greenBlob from "../../images/greenBlob.svg";
+import orangeBlob from "../../images/orangeBlob.svg";
+import purpleBlob from "../../images/purpleBlob.svg";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -32,9 +35,27 @@ const Home = () => {
     <div className="Home">
       {/* <Header></Header> */}
       <main>
-        <Link className="menu-link" to="/work"><h1 className="menu-item">work</h1></Link>
-        <Link className="menu-link" to="/about"><h1 className="menu-item">about</h1></Link>
-        <h1 className="menu-item">contact</h1>
+        {/* <h1 className="page-title left">Hello dere</h1> */}
+        <section className="menu-section">
+          <div id="menu-column-one">
+            <img className="blob" src={greenBlob} alt="green blob"/>
+            <Link className="menu-link" to="/work">
+              <h1 className="menu-item right">work</h1>
+            </Link>
+          </div>
+          <div id="menu-column-two">
+            <img className="blob" src={orangeBlob} alt="orange blob"/>
+            <Link className="menu-link" to="/about">
+              <h1 className="menu-item center">about</h1>
+            </Link>
+          </div>
+          <div id="menu-column-three">
+            <img className="blob" src={purpleBlob} alt="purple blob"/>
+            <Link className="menu-link" to="/contact">
+              <h1 className="menu-item">contact</h1>
+            </Link>
+          </div>
+        </section>
         {/* <>
           <Swiper
             direction={"vertical"}

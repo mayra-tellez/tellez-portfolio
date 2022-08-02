@@ -13,7 +13,7 @@
 
 .ProjectCard:hover {
   /* border: 1px solid plum; */
-  background-color: rgba(255, 227, 255, 0.497);
+  background-color: #aaeca5c7;
 }
 
 .ProjectCard:hover .project-name {
@@ -62,7 +62,7 @@
   width: fit-content;
   border-radius: 20px;
   border: 1px solid var(--background);
-  background-color: tan;
+  background-color: rgba(210, 180, 140, 0.812);
   list-style: none;
   cursor: default;
   transition: all .3s;

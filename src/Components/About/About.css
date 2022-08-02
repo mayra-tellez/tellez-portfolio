@@ -1,12 +1,13 @@
 .About {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--background);
 }
 
-.About > main {
+.About > .page-title {
+  margin: 0;
+}
+
+/* .About > main {
   height: 85%;
   width: 93%;
   display: flex;
@@ -20,11 +21,11 @@
   linear-gradient(95deg, rgb(213, 192, 255), rgba(0,0,255,0) 70.71%),
   linear-gradient(230deg, rgb(253, 169, 130), rgba(0,0,255,0) 100%),
   linear-gradient(216deg, rgb(250, 161, 255), rgba(0,0,255,0) 90.71%);
-}
+} */
 
-.About-paragraph {
+/* .About-paragraph {
   width: 50%;
-}
+} */
 
 .About-img {
   height: 200px;

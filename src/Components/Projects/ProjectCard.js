@@ -4,7 +4,10 @@ const ProjectCard = (props) => {
   const { name, code_url, live_url, tags, description, image_path, image_alt } = props.project;
 
   return (
-    <div className="ProjectCard">
+    <div className="ProjectCard" 
+      data-project-name={name} 
+      data-project-image-path={image_path} data-project-image-alt={image_alt}
+    >
       <h3 className="project-name">{name}</h3>
       <p className="project-description">{description}</p>
       <div className="tags-and-links-container">
