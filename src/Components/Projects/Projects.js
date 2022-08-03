@@ -1,7 +1,7 @@
 import projects from "../../projects.json";
 import Header from '../Nav/Header';
 import Footer from '../Nav/Footer';
-import ProjectCard from './ProjectCard';
+// import ProjectCard from './ProjectCard';
 
 import './Projects.css';
 
@@ -10,7 +10,7 @@ const Projects = () => {
 
   return (
     <div className="Projects">
-      <Header></Header>
+      {/* <Header></Header>
       <main>
         <section className="projectsContainer">
           {projectList.map((project, i) => {
@@ -20,7 +20,7 @@ const Projects = () => {
           })}
         </section>
       </main>
-      <Footer></Footer>
+      <Footer></Footer> */}
     </div>
   );
 }

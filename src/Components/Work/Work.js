@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import projects from "../../projects.json";
-import ProjectCard from "../Projects/ProjectCard";
+import ProjectCard from "./ProjectCard";
 import "../../index.css";
 import "./Work.css";
 

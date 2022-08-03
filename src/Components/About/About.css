@@ -1,10 +1,38 @@
 .About {
   height: 100vh;
   background-color: var(--background);
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 20% 80%;
 }
 
 .About > .page-title {
+  margin: 5% 15% 0 0;
+  text-align: end;
+}
+
+.About > .navToHome-link {
+  margin: 7% 0 0 5%;
+  padding-left: 30px;
+}
+
+.About-main .page-title {
   margin: 0;
+  /* grid-column: 1 / 2; */
+  /* grid-row: 1 / 2; */
+  font-size: 2.5rem;
+}
+ 
+.About-main {
+  margin-left: 5%;
+  padding: 30px;
+  /* width: 50%; */
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  /* display: grid; */
+  /* grid-template-columns: 2fr 1fr; */
+  /* grid-template-rows: 1fr 1fr; */
+  /* row-gap: 15px; */
 }
 
 /* .About > main {
@@ -23,13 +51,76 @@
   linear-gradient(216deg, rgb(250, 161, 255), rgba(0,0,255,0) 90.71%);
 } */
 
-/* .About-paragraph {
-  width: 50%;
+.About-img {
+  height: 300px;
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 20px;
+  /* background-color: rgba(250, 255, 235, 0.589); */
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  object-fit: cover;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+.About-main .subtitle {
+  margin: 0;
+  font-family: var(--heading);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.5rem;
+  /* grid-column: 1 / 2;
+  grid-row: 1 / 2; */
+  /* align-self: flex-end; */
+}
+
+.About-main .resume-button {
+  padding: 10px 50px;
+  /* padding: 10px 75px 10px 15px; */
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: var(--background);
+  /* background-color: rgba(0, 0, 0, 0.822); */
+  font-size: 1.25rem;
+  transition: all .2s;
+  position: absolute;
+  right: 45%;
+}
+
+.About-main .resume-button:hover {
+  /* padding-right: 15px; */
+  cursor: pointer;
+  background-color: var(--background);
+  background-color: #FEBF83;
+  font-style: italic;
+  color: black;
+}
+
+.resume-button > .resume-link {
+  font-family: var(--heading);
+  /* color: var(--background); */
+  color: black;
+  text-decoration: none;
+}
+
+/* .resume-button:hover .resume-link {
+  color: black;
 } */
 
-.About-img {
-  height: 200px;
-  width: 200px;
-  background-color: rgba(250, 255, 235, 0.466);
-  border-radius: 50%;
+/* .resume-link:hover {
+  color: black;
+} */
+
+.resume-button:hover .arrow {
+  top: -3px;
+  color: black;
+}
+
+.resume-button > .arrow {
+  margin-left: 10px;
+  position: relative;
+  color: black;
 }
