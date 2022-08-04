@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+
+import purpleBlob from "../../images/purpleBlob.svg";
 import "./Contact.css";
 
 const Contact = () => {
@@ -6,6 +8,7 @@ const Contact = () => {
     <div className="Contact">
       <Link className="navToHome-link" to="/">back to <span id="home">home</span></Link>
       <section className="contact-main">
+        <img className="blob" src={purpleBlob} alt="purple blob"/>
         <h1 className="page-title">contact</h1>
         <p className="contact-info"><span className="contact-method">Email --</span> mayranicoletellez@gmail.com</p>
         <div className="contact-info"><span className="contact-method">Social --</span> 

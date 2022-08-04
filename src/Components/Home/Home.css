@@ -43,7 +43,7 @@
   transition: all .2s;
 }
 
-.blob {
+.Home .blob {
   margin-left: -60px;
   width: 125px;
   filter: blur(3px);

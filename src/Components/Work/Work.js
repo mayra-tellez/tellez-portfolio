@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import projects from "../../projects.json";
 import ProjectCard from "./ProjectCard";
+import greenBlob from "../../images/greenBlob.svg";
+
 import "../../index.css";
 import "./Work.css";
 
@@ -45,6 +47,7 @@ const Work = () => {
           }
         </div>
         <h1 className="page-title">work</h1>
+        <img className="blob" src={greenBlob} alt="green blob"/>
       </section>
       <section id="projects-section">
         {projectsList.map((project, i) => {
