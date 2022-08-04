@@ -1,0 +1,104 @@
+.Contact {
+  height: 100vh;
+  background-color: var(--background);
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 20% 80%;
+}
+
+.Contact > .navToHome-link {
+  margin: 15% 0 0 10%;
+  padding-left: 30px;
+  height: fit-content;
+  width: 50%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.Contact .page-title {
+  margin: 0;
+}
+
+.Contact > .contact-main {
+  margin-top: 20px;
+  padding-left: 5%;
+  height: 50%;
+  /* margin: 10% 10% 0 10%; */
+  /* width: 50%; */
+  border: var(--black-border);
+  border-radius: var(--round-border);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.contact-main > .page-title {
+  width: fit-content;
+  position: relative;
+  top: -70px;
+  left: 40px;
+  background-color: var(--background);
+}
+
+/* .contact-main > .contact-info {
+  font-size: 18px;
+} */
+
+div.contact-info {
+  /* width: 25%; */
+  display: flex;
+  align-items: center;
+}
+
+.contact-main .contact-method {
+  font-family: var(--heading);
+  font-size: 18px;
+}
+
+.socials {
+  color: black;
+  text-decoration: none;
+}
+
+.social-one {
+  margin-left: 3px;
+}
+
+.socials-container-one {
+  margin-right: 10px;
+}
+
+.contact-main .socials-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.socials-container:hover .socials {
+  text-decoration: underline;
+}
+
+.contact-main .arrow {
+  margin: 0 0 0 3px;
+  position: relative;
+}
+
+.socials-container:hover .arrow {
+  top: -3px;
+}
+
+.signoff-container {
+  margin-right: 10%;
+  height: 135px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.signoff {
+  padding: 0 5px;
+  font-family: var(--heading);
+  font-style: italic;
+  font-weight: 500;
+  position: relative;
+  bottom: 0;
+  background-color: var(--background);
+}

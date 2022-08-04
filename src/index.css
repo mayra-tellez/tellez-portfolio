@@ -8,6 +8,8 @@ body {
 :root {
   --background: #f6f2e7;
   --heading: 'Montserrat Alternates', sans-serif;
+  --black-border: 1px solid black;
+  --round-border: 20px;
 }
 
 /* ----- global styles ----- */
