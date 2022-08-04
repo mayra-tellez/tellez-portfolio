@@ -8,24 +8,31 @@ const Contact = () => {
     <div className="Contact">
       <Link className="navToHome-link" to="/">back to <span id="home">home</span></Link>
       <section className="contact-main">
-        <img className="blob" src={purpleBlob} alt="purple blob"/>
         <h1 className="page-title">contact</h1>
-        <p className="contact-info"><span className="contact-method">Email --</span> mayranicoletellez@gmail.com</p>
-        <div className="contact-info"><span className="contact-method">Social --</span> 
-          <div className="socials-container socials-container-one">
-            <a className="socials social-one" href="https://www.linkedin.com/in/mayra-tellez/" target="blank">LinkedIn</a>
-            <span className="arrow arrow-one">&#8599;</span>
-          </div>
+        <div className="info-container info-container-one">
+          <p className="contact-method">Email</p>
+          <div className="email">mayranicoletellez@gmail.com</div>
+        </div>
+        <div className="info-container info-container-two">
+          <p className="contact-method">Social</p> 
           <div className="socials-container">
-            <a className="socials" href="https://github.com/mayra-tellez" target="blank">Github</a>            
-            <span className="arrow">&#8599;</span>
+            <span className="social-with-arrow">
+              <a className="social" href="https://www.linkedin.com/in/mayra-tellez/" target="blank">
+                LinkedIn
+              </a>
+              <span className="arrow">&#8599;</span>
+            </span>
+            <span className="social-with-arrow">
+              <a className="social" href="https://github.com/mayra-tellez" target="blank">Github</a>            
+              <span className="arrow">&#8599;</span>
+            </span>
           </div>
         </div>
         <div className="signoff-container">
-          <p className="signoff">talk soon!</p>
-          {/* <p className="signoff">this is everything for now. talk soon!</p> */}
+          {/* <p className="signoff">talk soon!</p> */}
         </div>
       </section>
+      <img className="blob" src={purpleBlob} alt="purple blob"/>
     </div>
   );
 }

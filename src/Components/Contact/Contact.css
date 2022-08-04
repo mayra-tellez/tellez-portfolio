@@ -29,6 +29,8 @@
   border-radius: var(--round-border);
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  position: relative;
+  z-index: 2;
 }
 
 .contact-main > .page-title {
@@ -39,40 +41,51 @@
   background-color: var(--background);
 }
 
-/* .contact-main > .contact-info {
-  font-size: 18px;
+/* .info-container {
+  border-left: 1px solid purple;
 } */
 
-div.contact-info {
-  /* width: 25%; */
-  display: flex;
-  align-items: center;
+.info-container-one {
+  position: relative;
+  top: -12%;
+}
+
+.info-container-two {
+  position: relative;
+  top: -5%;
 }
 
 .contact-main .contact-method {
+  margin-top: 0;
+  margin-bottom: 1%;
   font-family: var(--heading);
   font-size: 18px;
+  font-weight: 500;
 }
 
-.socials {
+.email, .socials-container {
+  padding-left: 3%;
+  font-size: large;
+}
+
+.socials-container {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social {
   color: black;
   text-decoration: none;
 }
 
-.social-one {
-  margin-left: 3px;
-}
-
-.socials-container-one {
-  margin-right: 10px;
-}
-
-.contact-main .socials-container {
+.contact-main .social-with-arrow {
   display: flex;
   align-items: flex-end;
 }
 
-.socials-container:hover .socials {
+.social-with-arrow:hover .social {
   text-decoration: underline;
 }
 
@@ -81,24 +94,37 @@ div.contact-info {
   position: relative;
 }
 
-.socials-container:hover .arrow {
+.social-with-arrow:hover .arrow {
   top: -3px;
 }
 
-.signoff-container {
-  margin-right: 10%;
-  height: 135px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
+/* .signoff-container { */
+  /* margin-right: 10%; */
+  /* height: 135px; */
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+/* } */
 
 .signoff {
   padding: 0 5px;
   font-family: var(--heading);
   font-style: italic;
   font-weight: 500;
-  position: relative;
-  bottom: 0;
-  background-color: var(--background);
+  /* position: relative; */
+  /* bottom: 0; */
+  /* background-color: var(--background); */
+}
+
+.Contact .blob {
+  width: 700px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  position: fixed;
+  bottom: -15%;
+  right: 10%;
+  filter: blur(5px);
+  opacity: .9;
+  transform: rotate(120deg);
+  z-index: 1;
 }
