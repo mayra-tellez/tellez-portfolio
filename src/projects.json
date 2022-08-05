@@ -1,44 +1,103 @@
 {
   "projects": [
     {
-      "id": 0,
+      "name": "Course Tracker",
+      "code_url": "https://github.com/theMVPshop/gantt-app",
+      "live_url": "https://gantt-app.vercel.app/",
+      "tags": ["React", "SQL", "DHTMLX Gantt", "CSS"],
+      "description": "A full stack web application built for the directors of Austin Coding Academy during my internship at Zollege. With a team of 4-5 developers, our goal was to deliver a useful tool for them to record and keep track of past and ongoing bootcamp courses.",
+      "image_path": "courseTrackerDashboard",
+      "image_alt": "Course Tracker thumbnail"
+    },
+    {
       "name": "Zospace",
-      "code_url": "https://github.com/mayra-tellez/landingpage",
+      "code_url": "https://github.com/theMVPshop/landingpage",
       "live_url": "https://mayra-tellez.github.io/landingpage/html/landing.html",
       "tags": ["Bootstrap 5", "CSS", "HTML"],
-      "description": "The first website I worked on in my internship at Zollege; Working off of a high-fidelity mockup, I developed the landing page and navigation menu for this new Zospace website to look great at all screen sizes. This project was achieved with a team of 5 developers, and I learned a lot about decision making as a team. /// Pixel perfect implementation of a product landing page design for Zospace Apps at Zollege",
+      "description": "A product site developed from a mockup design with a team of 5 for our internship at Zollege. I had ownership of the About page and its responsive format for a perfect layout on all screens.",
       "image_path": "landingPageThumbnail",
       "image_alt": "Zospace landing page thumbnail"
     },
     {
-      "id": 1,
       "name": "Billy",
       "code_url": "https://github.com/mayra-tellez/bills-tracker",
       "live_url": "https://bills-tracker.vercel.app/",
       "tags": ["React", "Node.js", "Express", "SQL", "REST API"],
-      "description": "Billy - a full-stack application for tracking monthly bills. /// I designed and coded Elliot Smith Player, my capstone project at Austin Coding Academy, as a web player for artist Elliot Smith's discography. Searching for Elliot's songs, creating/saving customized playlists, and of course listening to the music are a few of the features available on the app.",
+      "description": "My final capstone project for Austin Coding Academy. Billy is a full stack web app that helps users track and manage their monthly bills, quickly navigate to their banks' home pages, and find bank locations nearby.",
       "image_path": "billyDashboard",
       "image_alt": "Billy App dashboard thumbnail"
     },
     {
-      "id": 2,
       "name": "Small Business",
       "code_url": "https://github.com/mayra-tellez/small-business",
       "live_url": "https://small-business-zeta.vercel.app/",
-      "tags": ["React", "Redux", "Material UI"],
-      "description": "Local Small Business App created from a mockup design /// Small business directory app built from a mockup with react-redux and material-ui",
+      "tags": ["React", "Redux", "Material UI", "Google-Map-React"],
+      "description": "Local web app featuring Austin small businesses.",
       "image_path": "ies",
       "image_alt": "Small business thumbnail"
     },
     {
-      "id": 3,
       "name": "Music Dashboard",
       "code_url": "https://github.com/mayra-tellez/music-app",
       "live_url": "https://music-app-ivory.vercel.app/",
       "tags": ["React", "Material UI"],
-      "description": "Simple music dashboard app built using material-ui /// Music Dashboard App created from mockup design",
+      "description": "Music Dashboard App created with a focus on MUI elements.",
       "image_path": "musicApp",
       "image_alt": "Music app thumbnail"
+    },
+    {
+      "name": "Address Book",
+      "code_url": "https://github.com/mayra-tellez/address-book",
+      "live_url": "https://address-book-rust.vercel.app/",
+      "tags": ["React", "REST API", "CSS"],
+      "description": "Simple Address Book displaying information from the Random User API.",
+      "image_path": "addressBook",
+      "image_alt": "Address book thumbnail"
+    },
+    {
+      "name": "Beer List",
+      "code_url": "https://github.com/mayra-tellez/beer-api-app",
+      "live_url": "https://address-book-rust.vercel.app/",
+      "tags": ["React", "REST API", "CSS"],
+      "description": "Simple Beer List displaying information from the Punk API.",
+      "image_path": "beerApp",
+      "image_alt": "Beer site thumbnail"
+    },
+    {
+      "name": "Hair Salon Site",
+      "code_url": "https://github.com/mayra-tellez/hairSalonWebsite",
+      "live_url": "https://mayra-tellez.github.io/hairSalonWebsite/",
+      "tags": ["HTML", "CSS"],
+      "description": "Hair salon website project for Austin Coding Academy.",
+      "image_path": "trimsSite",
+      "image_alt": "Hair salon site thumbnail"
+    },
+    {
+      "name": "Hangman",
+      "code_url": "https://github.com/mayra-tellez/JS211_Hangman",
+      "live_url": "https://mayra-tellez.github.io/JS211_Hangman/",
+      "tags": ["JavaScript", "HTML", "CSS"],
+      "description": "Game of Hangman hackathon project for Austin Coding Academy, created with a team of 3.",
+      "image_path": "hangman",
+      "image_alt": "Hangman game thumbnail"
+    },
+    {
+      "name": "To Do List",
+      "code_url": "https://github.com/mayra-tellez/todo-app-react",
+      "live_url": "https://todo-app-react-omega.vercel.app/",
+      "tags": ["React", "HTML", "CSS"],
+      "description": "Simple To Do List App project for Austing Coding Academy.",
+      "image_path": "todo",
+      "image_alt": "To do list app thumbnail"
+    },
+    {
+      "name": "Tic Tac Toe",
+      "code_url": "https://github.com/mayra-tellez/TicTacToe-101",
+      "live_url": "https://mayra-tellez.github.io/TicTacToe-101/",
+      "tags": ["JavaScript", "HTML", "CSS"],
+      "description": "Game of Tic Tac Toe project for Austin Coding Academy.",
+      "image_path": "tictactoe",
+      "image_alt": "Tic tac toe game thumbnail"
     }
   ] 
 }
