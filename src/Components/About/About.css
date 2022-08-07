@@ -21,22 +21,13 @@
 
 .About-main .page-title {
   margin: 0;
-  /* grid-column: 1 / 2; */
-  /* grid-row: 1 / 2; */
   font-size: 2.5rem;
 }
  
 .About-main {
-  margin-left: 5%;
+  margin-left: 10%;
   padding: 30px;
-  /* width: 50%; */
-  /* border: 1px solid black; */
   border-left: 1px solid #FEAA63;
-  /* border-radius: 20px; */
-  /* display: grid; */
-  /* grid-template-columns: 2fr 1fr; */
-  /* grid-template-rows: 1fr 1fr; */
-  /* row-gap: 15px; */
 }
 
 /* .About > main {
@@ -56,11 +47,11 @@
 } */
 
 .About-img {
+  margin-top: -25%;
   height: 300px;
   width: 250px;
   border: 1px solid black;
   border-radius: 20px;
-  /* background-color: rgba(250, 255, 235, 0.589); */
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   object-fit: cover;
@@ -76,19 +67,14 @@
   font-weight: 300;
   font-style: italic;
   font-size: 1.5rem;
-  /* grid-column: 1 / 2;
-  grid-row: 1 / 2; */
-  /* align-self: flex-end; */
 }
 
 .About-main .resume-button {
   padding: 10px 50px;
-  /* padding: 10px 75px 10px 15px; */
   width: fit-content;
   border: 1px solid black;
   border-radius: 20px;
   background-color: var(--background);
-  /* background-color: rgba(0, 0, 0, 0.822); */
   font-size: 1.25rem;
   transition: all .2s;
   position: absolute;
@@ -96,30 +82,18 @@
 }
 
 .About-main .resume-button:hover {
-  /* padding-right: 15px; */
   cursor: pointer;
   background-color: var(--background);
-  /* background-image: linear-gradient(#FECD98, #ffb773); */
   background-color: #FECD98;
-  /* background-color: #FEBF83; */
   font-style: italic;
   color: black;
 }
 
 .resume-button > .resume-link {
   font-family: var(--heading);
-  /* color: var(--background); */
   color: black;
   text-decoration: none;
 }
-
-/* .resume-button:hover .resume-link {
-  color: black;
-} */
-
-/* .resume-link:hover {
-  color: black;
-} */
 
 .resume-button:hover .arrow {
   top: -3px;
