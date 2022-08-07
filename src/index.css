@@ -10,6 +10,9 @@ body {
   --heading: 'Montserrat Alternates', sans-serif;
   --black-border: 1px solid black;
   --round-border: 20px;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
 }
 
 /* ----- global styles ----- */
@@ -21,7 +24,6 @@ body {
 }
 
 .navToHome-link {
-  width: 25%;
   text-decoration: none;
   color: black;
   font-family: var(--heading);
@@ -38,22 +40,91 @@ body {
   letter-spacing: 0rem;
 }
 
+/* ----- responsive ----- */
+/* tablet */
+@media (min-width: 768px) {
+  .Work, .About, .Contact {
+    width: 100vw;
+  }
+
+  .Home {
+    width: 80vw;
+  }
+
+  .navToHome-link {
+    width: 35%;
+  }
+
+  .Contact > .navToHome-link {
+    width: 100%;
+  }
+
+  .Home > main {
+    width: 100%;
+  }
+
+  /* .menu-section {
+    grid-template-columns: 1fr;
+  } */
+}
+
+/* laptop */
+@media (min-width: 1024px) {
+  .Work, .About, .Contact {
+    width: 100vw;
+  }
+
+  .Home {
+    width: 80vw;
+  }
+
+  .navToHome-link {
+    width: 35%;
+  }
+
+  .Contact > .navToHome-link {
+    width: 100%;
+  }
+
+  .Home > main {
+    width: 100%;
+  }
+
+  /* .menu-section {
+    grid-template-columns: 1fr 1fr 1fr;
+  } */
+}
+
+/* large laptop */
+@media (min-width: 1440px) {
+  .Home, .Work, .About, .Contact {
+    width: 1440px;
+  }
+
+  .navToHome-link {
+    width: 25%;
+  }
+
+  .Contact > .navToHome-link {
+    width: 50%;
+  }
+
+  .Home > main {
+    width: 80%;
+  }
+}
+
 /* ----- custom scrollbar ----- */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  /* background: #f1f1f1;  */
   background: var(--background); 
-  /* border-top-right-radius: 5px; */
-  /* border-bottom-right-radius: 5px; */
 }
  
 ::-webkit-scrollbar-thumb {
   background: #888; 
-  /* border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px; */
   border-radius: 5px;
 }
 
