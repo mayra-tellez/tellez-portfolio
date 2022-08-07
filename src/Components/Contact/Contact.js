@@ -7,7 +7,10 @@ const Contact = () => {
   return (
     <div className="Contact">
       <Link className="navToHome-link" to="/">back to <span id="home">home</span></Link>
-      <h1 className="page-title">contact</h1>
+
+      <div className="signoff-container">
+        <p className="signoff">Email or message me anytime. Talk soon!</p>
+      </div>
 
       <div className="info-container info-container-one">
         <p className="contact-method">Email</p>
@@ -25,6 +28,7 @@ const Contact = () => {
             </a>
             <span className="arrow">&#8599;</span>
           </span>
+
           <span className="social-with-arrow">
             <a className="social" href="https://github.com/mayra-tellez" target="blank">Github</a>            
             <span className="arrow">&#8599;</span>
@@ -32,9 +36,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="signoff-container">
-        <p className="signoff">talk soon!</p>
-      </div>
+      <h1 className="page-title">contact</h1>
 
       <img className="blob" src={purpleBlob} alt="purple blob"/>
 
