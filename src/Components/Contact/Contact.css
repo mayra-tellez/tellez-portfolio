@@ -10,7 +10,6 @@
   margin: 15% 0 0 10%;
   padding-left: 30px;
   height: fit-content;
-  width: 50%;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
@@ -105,7 +104,7 @@
 }
 
 .signoff {
-  margin-right: 5%;
+  margin-right: 10%;
   padding: 0 5px;
   font-family: var(--heading);
   font-style: italic;
@@ -123,4 +122,16 @@
   opacity: .9;
   transform: rotate(100deg);
   z-index: 1;
+}
+
+@media (min-width: 1440px) {
+  .Contact .blob{
+    width: 800px;
+  }
+
+  .Contact .page-title {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    justify-content: flex-end;
+  }
 }
