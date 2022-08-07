@@ -1,12 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Pagination } from "swiper";
 
-import projects from "../../projects.json";
-import Header from "../Nav/Header";
-import Footer from "../Nav/Footer";
-import FeatureProjectCard from "../Projects/FeatureProjectCard";
 import greenBlob from "../../images/greenBlob.svg";
 import orangeBlob from "../../images/orangeBlob.svg";
 import purpleBlob from "../../images/purpleBlob.svg";
@@ -71,22 +65,10 @@ const Home = () => {
     purpleColumn.addEventListener("mouseleave", returnPurpleBlob);
   })
 
-  const timeOfDay = () => {
-    const today = new Date();
-    const time = today.getHours();
-  
-    if (time >= 0 && time < 12) {
-      return "morning";
-    } else if (time >= 12 && time < 17) {
-      return "afternoon";
-    } else if (time >= 17 && time <= 23) {
-      return "evening";
-    }
-  }
-
   return (
     <div className="Home">
       <main>
+
         <section className="intro">
           <p id="name">mayra téllez</p>
           <p>Front End Software Engineer, <br /> Full Stack Trained</p>
@@ -96,26 +78,28 @@ const Home = () => {
             <img  id="purple-blob" className="blob" src={purpleBlob} alt="purple blob"/>
           </div>
         </section>
+
         <section className="menu-section">
           <div id="green-column" className="menu-column">
             <Link className="menu-link" to="/work">
               <h1 className="menu-item right">work</h1>
             </Link>
           </div>
+
           <div id="orange-column" className="menu-column">
             <Link className="menu-link" to="/about">
               <h1 className="menu-item center">about</h1>
             </Link>
           </div>
+          
           <div id="purple-column" className="menu-column">
             <Link className="menu-link" to="/contact">
               <h1 className="menu-item">contact</h1>
             </Link>
           </div>
         </section>
-      </main>
 
-      {/* <p>Hope you're enjoying your {timeOfDay()} <span>&#9786;</span></p> */}
+      </main>
     </div>
   );
 }
