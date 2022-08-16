@@ -37,6 +37,7 @@ const Work = () => {
 
   return (
     <div className="Work">
+
       <section className="titleAndImage-section">
         <Link className="navToHome-link" to="/">back to <span id="home">home</span></Link>
         <div className="project-image-container">
@@ -49,6 +50,7 @@ const Work = () => {
         <h1 className="page-title">work</h1>
         <img className="blob" src={greenBlob} alt="green blob"/>
       </section>
+
       <section id="projects-section">
         {projectsList.map((project, i) => {
           return (
@@ -56,6 +58,7 @@ const Work = () => {
           )
         })}
       </section>
+
     </div>
   );
 }

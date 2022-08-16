@@ -1,11 +1,8 @@
 .About {
-  height: 100vh;
   background-color: var(--background);
   display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 20% 80%;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .About > .page-title {
@@ -28,6 +25,7 @@
   margin-left: 10%;
   padding: 30px;
   border-left: 1px solid #FEAA63;
+  z-index: 2;
 }
 
 /* .About > main {
@@ -47,13 +45,8 @@
 } */
 
 .About-img {
-  margin-top: -25%;
-  height: 300px;
-  width: 250px;
   border: 1px solid black;
   border-radius: 20px;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
   object-fit: cover;
   display: flex;
   align-self: center;
@@ -70,15 +63,13 @@
 }
 
 .About-main .resume-button {
-  padding: 10px 50px;
   width: fit-content;
   border: 1px solid black;
   border-radius: 20px;
-  background-color: var(--background);
   font-size: 1.25rem;
   transition: all .2s;
   position: absolute;
-  right: 45%;
+  background-color: var(--background);
 }
 
 .About-main .resume-button:hover {
@@ -117,4 +108,72 @@
   opacity: .9;
   transform: rotate(185deg);
   z-index: 1;
+}
+
+/* ----- responsive ----- */
+/* mobile S */
+@media (min-width: 320px) {
+  .About {
+    height: max-content;
+    grid-template-columns: 100%;
+  }
+
+  .About-img {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    height: 200px;
+    width: 150px;
+    grid-column: 1 / 2;
+    background-color: var(--about-orange);
+    /* background: #fea963b9; */
+  }
+
+  .About-main .resume-button {
+    padding: 10px 30px;
+  }
+
+  .About .blob {
+    width: 300px;
+    top: -12%;
+    right: -12%;
+    transform: rotate(185deg);
+    z-index: 1;
+  }
+}
+
+/* laptop */
+@media (min-width: 1024px) {
+  .About {
+    height: 100vh;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 20% 80%;
+  }
+
+  .About-img {
+    margin-top: -25%;
+    margin-bottom: 0;
+    height: 300px;
+    width: 250px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: transparent;
+  }
+
+  .About-main .resume-button {
+    padding: 10px 50px;
+    right: 45%;
+  }
+
+  .About .blob {
+    width: 700px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    position: fixed;
+    top: -27%;
+    right: -5%;
+    filter: blur(5px);
+    opacity: .9;
+    transform: rotate(185deg);
+    z-index: 1;
+  }
 }

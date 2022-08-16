@@ -25,7 +25,6 @@ const About = () => {
       <Link className="navToHome-link" to="/">back to <span id="home">home</span></Link>
       <h1 className="page-title">about</h1>
       <img className="blob" src={orangeBlob} alt="orange blob"/>
-      <img className="About-img" src={profilePic} alt="Mayra Tellez" />
 
       <section className="About-main">
         <h1 className="page-title">hello!</h1>
@@ -48,6 +47,8 @@ const About = () => {
           <span className="arrow">&#8599;</span>
         </button>
       </section>
+
+      <img className="About-img" src={profilePic} alt="Mayra Tellez" />
 
     </div>
   )

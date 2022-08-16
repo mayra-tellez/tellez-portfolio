@@ -10,15 +10,20 @@ body {
   --heading: 'Montserrat Alternates', sans-serif;
   --black-border: 1px solid black;
   --round-border: 20px;
+  --work-green: #aaf2a8aa;
+  --about-orange: #FEAA63;
+  --contact-purple: #C169CD;
+}
+
+/* ----- global styles ----- */
+:root {
   background-color: var(--background);
   display: flex;
   justify-content: center;
 }
 
-/* ----- global styles ----- */
 .page-title {
   font-family: var(--heading);
-  font-size: 6rem;
   font-weight: 400;
   font-style: italic;
 }
@@ -27,6 +32,7 @@ body {
   text-decoration: none;
   color: black;
   font-family: var(--heading);
+  z-index: 2;
 }
 
 #home {
@@ -41,31 +47,11 @@ body {
 }
 
 /* ----- responsive ----- */
-/* tablet */
-@media (min-width: 768px) {
-  .Work, .About, .Contact {
-    width: 100vw;
+/* mobile S */
+@media (min-width: 320px) {
+  .page-title {
+    font-size: 3rem;
   }
-
-  .Home {
-    width: 80vw;
-  }
-
-  .navToHome-link {
-    width: 35%;
-  }
-
-  .Contact > .navToHome-link {
-    width: 100%;
-  }
-
-  .Home > main {
-    width: 100%;
-  }
-
-  /* .menu-section {
-    grid-template-columns: 1fr;
-  } */
 }
 
 /* laptop */
@@ -74,25 +60,13 @@ body {
     width: 100vw;
   }
 
-  .Home {
-    width: 80vw;
-  }
-
   .navToHome-link {
     width: 35%;
   }
 
-  .Contact > .navToHome-link {
-    width: 100%;
+  .page-title {
+    font-size: 6rem;
   }
-
-  .Home > main {
-    width: 100%;
-  }
-
-  /* .menu-section {
-    grid-template-columns: 1fr 1fr 1fr;
-  } */
 }
 
 /* large laptop */
@@ -103,14 +77,6 @@ body {
 
   .navToHome-link {
     width: 25%;
-  }
-
-  .Contact > .navToHome-link {
-    width: 50%;
-  }
-
-  .Home > main {
-    width: 80%;
   }
 }
 

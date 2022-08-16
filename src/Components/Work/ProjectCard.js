@@ -8,8 +8,11 @@ const ProjectCard = (props) => {
       data-project-name={name} 
       data-project-image-path={image_path} data-project-image-alt={image_alt}
     >
+
       <h3 className="project-name">{name}</h3>
+      <img alt={image_alt} src={require("../../images/" + image_path + ".png")}></img>
       <p className="project-description">{description}</p>
+
       <div className="tags-and-links-container">
         <ul>
           {tags.map((tag, i) => {
@@ -17,18 +20,21 @@ const ProjectCard = (props) => {
             return <li className="tag" key={i}>{lowercaseTag}</li>
           })}
         </ul>
+
         <div className="links-container">
           <div className="link-and-arrow-container">
             <a className="link" href={code_url} target="blank">Code Repo</a>
             <span className="arrow">&#8599;</span>
           </div>
+
           <div className="link-and-arrow-container">
             <a className="link" href={live_url} target="blank">Live Site</a>
             <span className="arrow">&#8599;</span>
           </div>
         </div>
+        
       </div>
-      {/* <img alt={image_alt} src={require("../../images/" + image_path + ".png")}></img> */}
+
     </div>
   );
 }

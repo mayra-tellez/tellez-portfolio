@@ -1,8 +1,8 @@
 .Work {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   background-color: var(--background);
+  /* overflow: hidden; */
 }
 
 .Work > .titleAndImage-section {
@@ -27,31 +27,111 @@
 }
 
 .project-image-container > #project-image {
-  margin-left: 20%;
-  height: 350px;
-  width: 450px;
   border-radius: 20px;
   object-fit: cover;
   object-position: top;
 }
 
 .Work > #projects-section {
-  padding-top: 5px;
-  height: 90%;
+  /* padding-top: 5px; */
+  height: 95%;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
   position: relative;
   top: 5%;
+  z-index: 2;
 }
 
 .Work .blob {
-  width: 700px;
   position: fixed;
-  bottom: -15%;
-  left: -8%;
   filter: blur(5px);
   opacity: .9;
-  transform: rotate(-90deg);
   z-index: 1;
+}
+
+/* ----- responsive ----- */
+/* mobile S */
+@media (min-width: 320px) {
+  .Work {
+    grid-template-columns: 1fr;
+  }
+
+  .Work .blob {
+    /* width: 400px; */
+    top: -12%;
+    right: -25%;
+    transform: rotate(90deg);
+  }
+
+  .titleAndImage-section > .navToHome-link {
+    padding-top: 10%;
+  }
+
+  #home {
+    padding-left: 0;
+    letter-spacing: 0;
+  }
+
+  .titleAndImage-section > .page-title {
+    padding-top: 5%;
+    text-align: end;
+    padding-right: 20%;
+  }
+
+  .project-image-container {
+    display: none;
+  }
+}
+
+/* laptop */
+@media (min-width: 1024px) {
+  .Work {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Work .blob {
+    width: 700px;
+    top: 30%;
+    right: 55%;
+    transform: rotate(-90deg);
+  }
+
+  .titleAndImage-section > .navToHome-link {
+    padding-top: 0;
+  }
+
+  #home {
+    padding-left: 5px;
+    letter-spacing: .5rem;
+  }
+
+  .titleAndImage-section > .page-title {
+    padding-top: 0;
+    text-align: start;
+  }
+
+  .project-image-container {
+    display: block;
+  }
+
+  .project-image-container > #project-image {
+    margin-left: 10%;
+    height: 300px;
+    width: 350px;
+  }
+}
+
+/* laptop L */
+@media (min-width: 1440px) {
+  .Work .blob {
+    top: 30%;
+    right: 65%;
+  }
+
+  .project-image-container > #project-image {
+    margin-left: 20%;
+    height: 350px;
+    width: 450px;
+  }
 }
