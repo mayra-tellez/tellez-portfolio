@@ -32,16 +32,16 @@ const Home = () => {
     // <stop id="stop1" stop-color="rgba(143.78, 178.763, 138.33, 1)" offset="0%"></stop>
     // <stop id="stop2" stop-color="rgba(167.223, 255, 164.211, 1)" offset="100%"></stop>
 
-    console.log(greenBlob);
+    // console.log(greenBlob);
 
-    const moveGreenBlob = () => {
-      greenBlob.style.position = "relative";
-      greenBlob.style.top = "140px";
-      greenBlob.style.right = "120px";
-      greenBlob.style.stopColor = "white";
-    }
+    // const moveGreenBlob = () => {
+    //   greenBlob.style.position = "relative";
+    //   greenBlob.style.top = "140px";
+    //   greenBlob.style.right = "120px";
+    //   greenBlob.style.stopColor = "white";
+    // }
 
-    moveGreenBlob();
+    // moveGreenBlob();
 
     // const returnGreenBlob = () => {
     //   greenBlob.style.backgroundColor = "var(--background)";

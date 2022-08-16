@@ -74,7 +74,7 @@
 
 .About-main .resume-button:hover {
   cursor: pointer;
-  background-color: var(--background);
+  /* background-color: var(--about-orange); */
   background-color: #FECD98;
   font-style: italic;
   color: black;
@@ -124,7 +124,8 @@
     height: 200px;
     width: 150px;
     grid-column: 1 / 2;
-    background-color: var(--about-orange);
+    /* background-color: #FECD98; */
+    /* background-color: var(--about-orange); */
     /* background: #fea963b9; */
   }
 
