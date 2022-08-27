@@ -43,7 +43,7 @@ const About = () => {
         <br />
 
         <button className="resume-button">
-          <a className="resume-link" href="https://drive.google.com/file/d/1jvsYt3sLAGKOl8YZmecUpMF00-ztipmi/view?usp=sharing" target="blank">My Resumé</a>
+          <a className="resume-link" href="https://drive.google.com/file/d/1Y6tFuagmnwMuHpeumZHpasD317AtO6kN/view?usp=sharing" target="blank">My Resumé</a>
           <span className="arrow">&#8599;</span>
         </button>
       </section>
