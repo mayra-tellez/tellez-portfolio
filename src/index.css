@@ -6,9 +6,11 @@ body {
 
 /* ----- global variables ----- */
 :root {
-  --background: #f6f2e7;
+  --background: #2f2f2f;
+  /* --background: #f6f2e7; */
   --heading: 'Montserrat Alternates', sans-serif;
-  --black-border: 1px solid black;
+  --black-border: 1px solid #f6f2e7;
+  /* --black-border: 1px solid black; */
   --round-border: 20px;
   --work-green: #aaf2a8aa;
   --about-orange: #FEAA63;

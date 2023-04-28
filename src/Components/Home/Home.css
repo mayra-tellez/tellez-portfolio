@@ -4,15 +4,16 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #f6f2e7;
+  background-color: var(--background);
+  color: #f6f2e7;
 }
 
-.Home > main {
+/* .Home > main {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 .intro {
   display: flex;
@@ -39,7 +40,8 @@
   position: relative;
 }
 
-.menu-column {
+.menu-box {
+  height: 20rem;
   /* margin: 0 5%; */
   border: var(--black-border);
   border-radius: var(--round-border);
@@ -47,13 +49,14 @@
 }
 
 .menu-link {
-  margin-left: 20px;
+  /* margin-left: 20px; */
   text-decoration: none;
-  color: black;
+  /* color: black; */
+  color: #f6f2e7;
 }
 
 .menu-item {
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 2rem;
   font-weight: 400;

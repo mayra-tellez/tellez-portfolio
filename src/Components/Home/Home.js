@@ -84,39 +84,37 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <main>
 
         <section className="intro">
           <p id="name">mayra téllez</p>
           <p>Front End Software Engineer, <br /> Full Stack Trained</p>
-          <div className="blobs-container">
+          {/* <div className="blobs-container">
             <img id="green-blob" className="blob" src={greenBlob} alt="green blob"/>
             <img  id="orange-blob" className="blob" src={orangeBlob} alt="orange blob"/>
             <img  id="purple-blob" className="blob" src={purpleBlob} alt="purple blob"/>
-          </div>
+          </div> */}
         </section>
 
-        <section className="menu-section">
-          <div id="green-column" className="menu-column">
+        {/* <section className="menu-section"> */}
+          <div id="work" className="menu-box">
             <Link className="menu-link" to="/work">
-              <h1 className="menu-item right">work</h1>
+              <h1 className="menu-item">work</h1>
             </Link>
           </div>
 
-          <div id="orange-column" className="menu-column">
+          <div id="about" className="menu-box">
             <Link className="menu-link" to="/about">
-              <h1 className="menu-item center">about</h1>
+              <h1 className="menu-item">about</h1>
             </Link>
           </div>
           
-          <div id="purple-column" className="menu-column">
+          <div id="contact" className="menu-box">
             <Link className="menu-link" to="/contact">
               <h1 className="menu-item">contact</h1>
             </Link>
           </div>
-        </section>
+        {/* </section> */}
 
-      </main>
     </div>
   );
 }
