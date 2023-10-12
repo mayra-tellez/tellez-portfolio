@@ -17,28 +17,28 @@ const Work = () => {
   const displayImagePath = imageData.projectImagePath;
   const displayImageAlt = imageData.projectImageAlt;
 
-  let projectCards = document.getElementsByClassName("ProjectCard");
+  // let projectCards = document.getElementsByClassName("ProjectCard");
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    Array.from(projectCards).forEach(card => {
+  //   Array.from(projectCards).forEach(card => {
 
-      card.addEventListener("mouseover", () => {
-        setImageDisplay(true);
-        setImageData(card.dataset);
-      });
+  //     card.addEventListener("mouseover", () => {
+  //       setImageDisplay(true);
+  //       setImageData(card.dataset);
+  //     });
 
-      card.addEventListener("mouseleave", () => {
-        setImageDisplay(false);
-        setImageData({});
-      });
-    })
-  })
+  //     card.addEventListener("mouseleave", () => {
+  //       setImageDisplay(false);
+  //       setImageData({});
+  //     });
+  //   })
+  // })
 
   return (
     <div className="Work">
-
-      <section className="titleAndImage-section">
+      <h2>Featured Projects</h2>
+      {/* <section className="titleAndImage-section">
         <Link className="navToHome-link" to="/">back to <span id="home">home</span></Link>
         <div className="project-image-container">
           {
@@ -49,7 +49,7 @@ const Work = () => {
         </div>
         <h1 className="page-title">work</h1>
         <img className="blob" src={greenBlob} alt="green blob"/>
-      </section>
+      </section> */}
 
       <section id="projects-section">
         {projectsList.map((project, i) => {

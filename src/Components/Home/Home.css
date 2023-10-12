@@ -1,12 +1,25 @@
 .Home {
-  height: 100vh;
+  width: 100%;
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  background-color: var(--background);
-  color: #f6f2e7;
+  background: var(--background);
 }
+
+main {
+  width: 100%;
+}
+
+/* #social-sidebar {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#email-sidebar {
+  grid-column: 3/4;
+  grid-row: 2/3;
+} */
 
 /* .Home > main {
   height: 100vh;
@@ -15,54 +28,9 @@
   justify-content: center;
 } */
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: var(--heading);
-  text-align: center;
-}
-
 .intro > p {
   margin-top: 0;
   font-size: large;
-}
-
-#name {
-  font-size: x-large;
-  font-weight: bold;
-}
-
-.menu-section {
-  margin-bottom: 10%;
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
-  position: relative;
-}
-
-.menu-box {
-  height: 20rem;
-  /* margin: 0 5%; */
-  border: var(--black-border);
-  border-radius: var(--round-border);
-  position: relative;
-}
-
-.menu-link {
-  /* margin-left: 20px; */
-  text-decoration: none;
-  /* color: black; */
-  color: #f6f2e7;
-}
-
-.menu-item {
-  /* margin-left: 20px; */
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: .5rem;
-  transition: all .2s;
 }
 
 .Home .blob {
@@ -119,8 +87,13 @@
   100% {margin-top: -37px}
 }
 
-.menu-item:hover {
+.nav-item:hover {
   letter-spacing: 0rem;
+}
+
+#about-component {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 /* .Home > main { */
@@ -146,62 +119,18 @@
   /* text-align: center; */
 /* } */
 
-/* ----- responsive ----- */
-/* mobile S */
+/* ---------- responsive ---------- */
+/* ----- mobile S ----- */
 @media (min-width: 320px) {
-  .Home > main {
-    margin-top: 45%;
-    width: 320px;
-  }
 
-  .Home .blob {
-    width: 100px;
-  }
-
-  #green-blob {
-    width: 90px;
-  }
-
-  .menu-section {
-    grid-template-columns: 1fr;
-  }
-
-  .menu-column {
-    margin: 0 2% 5% 2%; 
-  }
 }
 
-/* laptop */
+/* ----- laptop ----- */
 @media (min-width: 1024px) {
-  .Home {
-    width: 80vw;
-  }
 
-  .Home > main {
-    margin-top: 0;
-    width: 100%;
-  }
-
-  .Home .blob {
-    width: 150px;
-  }
-
-  #green-blob {
-    width: 135px;
-  }
-
-  .menu-section {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .menu-column {
-    margin: 0 5%;
-  }
 }
 
-/* large laptop */
+/* ----- large laptop ----- */
 @media (min-width: 1440px) {
-  .Home > main {
-    width: 80%;
-  }
+
 }

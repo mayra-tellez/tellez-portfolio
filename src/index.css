@@ -1,20 +1,34 @@
-body {
+body, html {
+  height: 100%;
+  width: 100%;
   margin: 0;
-  height: 100vh;
-  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito Sans ', sans-serif; */
 }
 
 /* ----- global variables ----- */
 :root {
-  --background: #2f2f2f;
+  /* --background: #2f2f2f; */
+  /* --background: #0f1012; */
+  /* --background: #fbe9d1; */
   /* --background: #f6f2e7; */
-  --heading: 'Montserrat Alternates', sans-serif;
+  /* --background: #2c3f1f; */
+  /* --heading: 'Montserrat Alternates', sans-serif; */
   --black-border: 1px solid #f6f2e7;
   /* --black-border: 1px solid black; */
   --round-border: 20px;
   --work-green: #aaf2a8aa;
   --about-orange: #FEAA63;
   --contact-purple: #C169CD;
+  --color-primary: #14252E;
+  --color-primary-light: #fff;
+  --font-heading-primary: 'Fraunces', serif;
+  --font-body-primary: 'Nunito Sans', sans-serif;
+  --extended-border: 0.5px 1px 0 0 var(--color-primary),
+  1.5px 2px 0 0 var(--color-primary),
+  2.5px 3px 0 0 var(--color-primary),
+  3.5px 4px 0 0 var(--color-primary),
+  4.5px 5px 0 0 var(--color-primary),
+  5.5px 6px 0 0 var(--color-primary);
 }
 
 /* ----- global styles ----- */
@@ -88,7 +102,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background); 
+  background: #FCF6F5; 
 }
  
 ::-webkit-scrollbar-thumb {

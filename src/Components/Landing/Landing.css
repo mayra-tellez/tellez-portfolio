@@ -1,0 +1,84 @@
+.Landing {
+  /* height: 100%; */
+  /* min-height: fit-content; */
+  padding: 5% 0 3% 0;
+  border-bottom: 2px solid var(--color-primary);
+  /* font-size: 4rem; */
+  /* font-family: 'Merriweather', serif; */
+  /* font-weight: 900; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--color-primary-light);
+}
+
+.Landing-name {
+  margin: 0 0 0 7%;
+  /* margin-right: 2.5%; */
+  /* margin-top: 0; */
+  color: #c3ff63;
+  /* text-align: end; */
+  font-size: 6rem;
+  font-weight: 900;
+  /* background: -webkit-linear-gradient(left, #c3ff63 , #C169CD);
+  background: -o-linear-gradient(right, #c3ff63, #C169CD);
+  background: -moz-linear-gradient(right, #c3ff63, #C169CD);
+  background: linear-gradient(to right, #c3ff63 , #C169CD); 
+  background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent; */
+ font-family: var(--font-heading-primary);
+ color: var(--color-primary);
+ text-shadow: 3px 5px #e5ccf4,
+ 4px 6px #e5ccf4,
+ 5px 7px #e5ccf4,
+ 6px 8px #e5ccf4;
+}
+
+.Landing-title {
+  width: 50%;
+  margin-left: 7%;
+  margin-bottom: 0;
+  /* margin-left: 2.5%; */
+  /* margin-top: 35%; */
+  font-size: 1.75rem;
+  font-family: var(--font-body-primary);
+  font-weight: 400;
+  color: #C169CD;
+  color: #b0c5a6;
+  color: var(--color-primary);
+}
+
+.Landing-links-container {
+  margin-left: 7%;
+  font-size: 1.75rem;
+}
+
+.Landing-link {
+  font-family: var(--font-body-primary);
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.bg {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  opacity: .9;
+  visibility: visible;
+  background: radial-gradient(ellipse at top, #e66465, transparent),
+              radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+}
+
+.c {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at bottom, #aa5db4, transparent),
+  radial-gradient(ellipse at top, #4d9f0c, transparent);
+}
+

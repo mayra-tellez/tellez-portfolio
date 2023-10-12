@@ -1,54 +1,50 @@
 import { Link } from "react-router-dom";
-
-import profilePic from "../../images/profilePicNoBackground.png";
-import orangeBlob from "../../images/orangeBlob.svg";
+import projects from "../../projects.json";
 
 import "./About.css";
 
 const About = () => {
-
-  const timeOfDay = () => {
-    const today = new Date();
-    const time = today.getHours();
-  
-    if (time >= 0 && time < 12) {
-      return "morning";
-    } else if (time >= 12 && time < 17) {
-      return "afternoon";
-    } else if (time >= 17 && time <= 23) {
-      return "evening";
-    }
-  }
+  const technologiesList = projects.technologies;
 
   return (
     <div className="About">
-      <Link className="navToHome-link" to="/">back to <span id="home">home</span></Link>
-      <h1 className="page-title">about</h1>
-      <img className="blob" src={orangeBlob} alt="orange blob"/>
+      <main>
+        <h2>About Me</h2>
 
-      <section className="About-main">
-        <h1 className="page-title">hello!</h1>
-        <br />
-        <h2 className="subtitle">I'm Mayra. Developer and Problem Solver.</h2>
-        <p className="About-paragraph">
-          <br />
-          Nothing makes me happier than coding a solution and doing it well. As a recent graduate of Austin Coding Academy and their  internship program, I've learned there are endless possibilites to finding an answer, and that's what makes it so exciting.  
-          <br />
-          <br />
-          I found my way to web development through some small exposure during my time in the fashion, retail and customer service industries. At Stitch Fix, I awed at the projects the engineers worked on. In my following roles at Beautifully Loved and Wildflowers Boutique, I created and updated websites first-hand. Now, I'm developing sites and apps from scratch for the people around me, and the best part of it all is that I'm helping to make a difference with work I enjoy. 
-          <br />
-          <br />
-          Feel free to browse around and let me know if there is anything I can do to help you, too. Thanks for stopping by - enjoy your {timeOfDay()}!
+        <p>
+          Hi! I'm Mayra (pronounced MY-dah, if you're curious &#9786;), and I work as a front-end web developer and educator. I enjoy building products that solve real world problems, like making the web easy to use for all. 
         </p>
+        <p>
+          Currently, I'm a teacher assistant and tutor at Austin Coding Academy, where I help students learn the fundamentals of full-stack programming. I also work on a freelance basis and continuously learn by staying up to date with the latest technologies.    
+        </p>
+        <p>
+          Previously, I've been involved in the nonprofit and client services industries as I've always had a desire to help others.
+        </p>
+
+        <h2>Technologies</h2>
+        <ul>
+          {technologiesList.map((tech, i) => {
+            return (
+              <li key={i}>{tech}</li>
+            )
+          })}
+        </ul>
+      </main>
+
+      <article className="about-article">
+        <p>hello</p>
         <br />
+        <br />
+        Software Engineer located in Austin, TX.  
+        <br />
+        <br />
+        let's try to make this look longer puh lease. 
+        <br />
+        <br />
+        help this is kind of short lorem ipsum html non word gibberish world heheheh.
+      </article>
 
-        <button className="resume-button">
-          <a className="resume-link" href="https://drive.google.com/file/d/1AA9lmokmj0ef8SqMpCPGbHkLJZgX-tjj/view?usp=sharing" target="blank">My Resumé</a>
-          <span className="arrow">&#8599;</span>
-        </button>
-      </section>
-
-      <img className="About-img" src={profilePic} alt="Mayra Tellez" />
+      {/* <img className="About-img" src={profilePic} alt="Mayra Tellez" /> */}
 
     </div>
   )
