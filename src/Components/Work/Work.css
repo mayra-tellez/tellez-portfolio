@@ -20,9 +20,8 @@
 }
 
 .Work > #projects-section {
-  width: 90%;
+  margin: 0 5% 0 5%;
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -54,13 +53,6 @@
   object-position: top;
 }
 
-.Work .blob {
-  position: fixed;
-  filter: blur(5px);
-  opacity: .9;
-  z-index: 1;
-}
-
 /* ---------- responsive ---------- */
 /* ----- mobile S ----- */
 @media (min-width: 320px) {
@@ -74,5 +66,11 @@
 
 /* ----- laptop L ----- */
 @media (min-width: 1440px) {
+  .Work {
+    /* padding: 5% 5% 2% 5%; */
+  }
 
+  #projects-section {
+    padding: 0 5% 0 5%;
+  }
 }

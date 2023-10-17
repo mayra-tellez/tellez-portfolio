@@ -24,7 +24,7 @@ header {
 }
 
 header > nav {
-  width: 30%;
+  width: 23%;
   display: flex;
   justify-content: space-evenly;
   font-size: 1.25rem;
@@ -32,8 +32,6 @@ header > nav {
 }
 
 nav p {
-  /* color: #b0c5a6; */
-  /* color: #dbded7; */
   color: var(--color-primary);
 }
 
@@ -68,33 +66,6 @@ nav p {
   font-size: 1.25rem;
 }
 
-/* nav > a, header > .link {
-  text-decoration: none;
-  color: #333;
-} */
-
-.initials {
-  font-family: 'Libre Baskerville', serif;
-  display: block;
-  transition: all .2s ease-out;
-  /* font-weight: bold;
-  font-size: larger; */
-  /* font-style: italic; */
-  /* color: rgb(137, 178, 253); */
-}
-
-.initials:hover {
-  transform: scale(1.5, 1.5);
-}
-
-/* .initials:hover #M {
-  
-}
-
-.initials:hover #T {
-  
-} */
-
 
 /* ---------- footer ---------- */
 footer {
@@ -105,7 +76,6 @@ footer {
 .footer-message {
   height: 35vh;
   width: 100%;
-  border-top: 2px solid var(--color-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,6 +129,11 @@ footer {
   padding-right: 5px;
 }
 
+
+
+
+
+
 /* ---------- symbols ---------- */
 #name-star {
   padding-right: 10px;
@@ -171,4 +146,24 @@ footer {
 
 #footer-stars {
   padding: 0 5px;
+}
+
+
+
+
+
+/* ---------- responsive ---------- */
+/* ----- large laptop ----- */
+@media (min-width: 1440px) {
+  header {
+    margin: 1% 35% 0 0;
+  }
+
+  header > nav {
+    width: 20%;
+  }
+
+  .footer-message {
+    width: 75%;
+  }
 }

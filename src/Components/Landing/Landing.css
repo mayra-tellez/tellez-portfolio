@@ -82,3 +82,13 @@
   radial-gradient(ellipse at top, #4d9f0c, transparent);
 }
 
+
+
+/* ---------- responsive ---------- */
+/* ----- large laptop ----- */
+@media (min-width: 1440px) {
+  .Landing {
+    padding: 0 15%;
+    padding: 5% 15% 3% 15%;
+  }
+}

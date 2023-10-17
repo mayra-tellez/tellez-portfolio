@@ -3,40 +3,40 @@ import { Link } from "react-router-dom";
 import "./Landing.css"
 
 const Landing = () => {
+
+  const scrollToAbout = (e) => {
+    e.preventDefault()
+    window.scrollTo({
+      top: document.querySelector("#About").offsetTop,
+      behavior: "smooth"
+    })
+  }
+
+  const scrollToWork = (e) => {
+    e.preventDefault()
+    window.scrollTo({
+      top: document.querySelector("#Work").offsetTop,
+      behavior: "smooth"
+    })
+  }
+
   return (
     <div className="Landing">
-      {/* <p>Hi, my name is</p> */}
-      {/* <p id="name">Mayra Téllez</p> */}
-      {/* <p>I’m a software engineer specializing in building highly performant applications that solve real-world problems and provide users with an awesome experience. I'm currently working using Spring Boot and Angular.</p> */}
-      {/* <p>
-        Hi, I'm Jessica Hernandez <br />
-        A UX Researcher living <br />
-        in San Francisco, CA with <br />
-        experience in Education
-      </p> */}
-      {/* <p>
-        Hi, I'm Mayra Téllez <br />
-        A Software Engineer living <br />
-        in Austin, TX with <br />
-        experience in Client Services
-      </p> */}
+
       <h1 className="Landing-name">Mayra <br/> Téllez</h1>
-      <p className="Landing-title">I specialize in building web apps with front-end frameworks and bringing user interface designs to life.*</p>
-      {/* <div className="bg"></div> */}
-      {/* <div className="c"></div> */}
+
+      <p className="Landing-title">I specialize in building web apps and bringing user interface designs to life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
       <p className="Landing-links-container">
-        <Link className="Landing-link" to="/about">About me</Link> / <Link className="Landing-link" to="/work">my work</Link>.
+        <Link className="Landing-link" to="" onClick={(e) => scrollToAbout(e)}>About me</Link> / <Link className="Landing-link" to="" onClick={(e) => scrollToWork(e)}>my work</Link>.
       </p>
 
-      {/* <div className="color-shadow"></div> */}
 
       {/* &#9786; */}
       {/* * */}
       {/* &#10036; */}
       {/* ✦ */}
       {/* &#128187; */}
-      {/* <p className="Landing-title">software engineer</p> */}
     </div>
   )
 }

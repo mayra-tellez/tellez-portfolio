@@ -1,16 +1,17 @@
 .Contact {
-  height: 40rem;
+  height: 35rem;
   width: 100%;
+  padding: 5% 0 0 0;
+  border-bottom: 2px solid var(--color-primary);
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   align-items: center;
   font-family: var(--font-body-primary);
   background-color: #fbf5e9;
 }
 
 .Contact > h2 {
-  margin-top: 5%;
+  margin-bottom: 0;
   font-size: 3rem;
   font-family: var(--font-heading-primary);
   font-weight: 600;
@@ -27,6 +28,9 @@
 
 .Contact article {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Contact h3 {
@@ -46,7 +50,6 @@
 .socials a, .Contact article > p {
   margin: 0 2%;
   height: 60px;
-  width: 150px;
   border: 2px solid var(--color-primary);
   border-radius: 3px;
   box-shadow: .5px 1px 0 0 var(--color-primary),
@@ -57,7 +60,6 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  background-color: white;
   color: var(--color-primary);
   font-family: var(--font-heading-primary);
   font-size: 1.25rem;
@@ -66,5 +68,29 @@
 .Contact article > p {
   width: fit-content;
   padding: 0 35px;
+  background-color: #FAE084;
 }
 
+.socials a {
+  width: 175px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials a:nth-child(1) {
+  background-color: #ADEDB3;
+}
+
+.socials a:nth-child(2) {
+  background-color: #A2D7E7;
+}
+
+
+
+/* ---------- responsive ---------- */
+/* ----- large laptop ----- */
+@media (min-width: 1440px) {
+  .Contact > section {
+    width: 55%;
+  }
+}

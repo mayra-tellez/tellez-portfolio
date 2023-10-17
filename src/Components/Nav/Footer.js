@@ -18,8 +18,9 @@ const Footer = () => {
     <footer>
       <div className="footer-message">
         <h1 className="Landing-name">Mayra <br/> Téllez</h1>
+        {/* &mdash; -- dash symbol */}
         <p>
-          *This website is admiringly inspired by the portfolio of <a href="https://fossheim.io/">Sarah L. Fossheim</a>. &mdash; Although I'm interested in learning, I'm not a UX/UI Designer by trade. So when it came to my personal portfolio, I decided to showcase my skills in mockup-to-reality creation instead. I found a site that I felt was relevant to my experience and personality and used it as a wireframe for my own site, only making adjustments due to content. Please enjoy and as always, feedback is appreciated!
+         This site is admiringly inspired by the portfolio of <a href="https://fossheim.io/" target="blank" rel="noopener">Sarah L. Fossheim</a>. &mdash; Being that I'm not a UI/UX Designer (although I'm interested to learn), I decided to showcase my skills in mockup-to-reality creation for my portfolio. Some adjustments have been made due to content.
         </p>
       </div>
 
