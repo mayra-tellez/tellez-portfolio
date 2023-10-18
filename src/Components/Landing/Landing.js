@@ -25,7 +25,7 @@ const Landing = () => {
 
       <h1 className="Landing-name">Mayra <br/> Téllez</h1>
 
-      <p className="Landing-title">I specialize in building web apps and bringing user interface designs to life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p className="Landing-title">I specialize in building web apps and bringing user interface designs to life with React and other front end frameworks.</p>
 
       <p className="Landing-links-container">
         <Link className="Landing-link" to="" onClick={(e) => scrollToAbout(e)}>About me</Link> / <Link className="Landing-link" to="" onClick={(e) => scrollToWork(e)}>my work</Link>.

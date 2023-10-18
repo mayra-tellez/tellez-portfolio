@@ -28,7 +28,7 @@ const Header = () => {
         </div>
       </nav>
 
-      <a className="resume-button" href="https://drive.google.com/file/d/1AA9lmokmj0ef8SqMpCPGbHkLJZgX-tjj/view?usp=sharing" target="blank">View Resumé</a>
+      <a className="resume-button" href="https://drive.google.com/file/d/1upL8jNltdKqMXG274feqXHGeJfYUuIyX/view?usp=share_link" target="blank">View Resumé</a>
     </header>
 
   )

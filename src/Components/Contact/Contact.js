@@ -18,7 +18,7 @@ const Contact = () => {
         </article>
 
         <article>
-          <h3>Click to Connect</h3>
+          <h3>Connect with Me</h3>
           <div className="socials">
             <a href="https://github.com/mayra-tellez">
               GitHub 
