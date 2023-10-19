@@ -1,0 +1,73 @@
+Original Project data
+  {
+    "name": "Small Business",
+    "code_url": "https://github.com/mayra-tellez/small-business",
+    "live_url": "https://small-business-zeta.vercel.app/",
+    "tags": ["React", "Redux", "Material UI", "Google-Map-React"],
+    "description": "Local web app featuring Austin small businesses.",
+    "image_path": "ies",
+    "image_alt": "Small business thumbnail"
+  },
+  {
+    "name": "Music Dashboard",
+    "code_url": "https://github.com/mayra-tellez/music-app",
+    "live_url": "https://music-app-ivory.vercel.app/",
+    "tags": ["React", "Material UI"],
+    "description": "Music Dashboard App created with a focus on MUI elements.",
+    "image_path": "musicApp",
+    "image_alt": "Music app thumbnail"
+  },
+  {
+    "name": "Address Book",
+    "code_url": "https://github.com/mayra-tellez/address-book",
+    "live_url": "https://address-book-rust.vercel.app/",
+    "tags": ["React", "REST API", "CSS"],
+    "description": "Simple Address Book displaying information from the Random User API.",
+    "image_path": "addressBook",
+    "image_alt": "Address book thumbnail"
+  },
+  {
+    "name": "Beer List",
+    "code_url": "https://github.com/mayra-tellez/beer-api-app",
+    "live_url": "https://address-book-rust.vercel.app/",
+    "tags": ["React", "REST API", "CSS"],
+    "description": "Simple Beer List displaying information from the Punk API.",
+    "image_path": "beerApp",
+    "image_alt": "Beer site thumbnail"
+  },
+  {
+    "name": "Hangman",
+    "code_url": "https://github.com/mayra-tellez/JS211_Hangman",
+    "live_url": "https://mayra-tellez.github.io/JS211_Hangman/",
+    "tags": ["JavaScript", "HTML", "CSS"],
+    "description": "Game of Hangman hackathon project for Austin Coding Academy, created with a team of 3.",
+    "image_path": "hangman",
+    "image_alt": "Hangman game thumbnail"
+  },
+  {
+  "name": "To Do List",
+  "code_url": "https://github.com/mayra-tellez/todo-app-react",
+  "live_url": "https://todo-app-react-omega.vercel.app/",
+  "tags": ["React", "HTML", "CSS"],
+  "description": "Simple To Do List App project for Austing Coding Academy.",
+  "image_path": "todo",
+  "image_alt": "To do list app thumbnail"
+  },
+  {
+  "name": "Hair Salon Site",
+  "code_url": "https://github.com/mayra-tellez/hairSalonWebsite",
+  "live_url": "https://mayra-tellez.github.io/hairSalonWebsite/",
+  "tags": ["HTML", "CSS"],
+  "description": "Hair salon website project for Austin Coding Academy.",
+  "image_path": "trimsSite",
+  "image_alt": "Hair salon site thumbnail"
+  },
+  {
+  "name": "Tic Tac Toe",
+  "code_url": "https://github.com/mayra-tellez/TicTacToe-101",
+  "live_url": "https://mayra-tellez.github.io/TicTacToe-101/",
+  "tags": ["JavaScript", "HTML", "CSS"],
+  "description": "Game of Tic Tac Toe project for Austin Coding Academy.",
+  "image_path": "tictactoe",
+  "image_alt": "Tic tac toe game thumbnail"
+}
