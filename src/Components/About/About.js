@@ -1,54 +1,44 @@
-import { Link } from "react-router-dom";
-
-import profilePic from "../../images/profilePicNoBackground.png";
-import orangeBlob from "../../images/orangeBlob.svg";
-
+import projects from "../../projects.json";
 import "./About.css";
 
 const About = () => {
-
-  const timeOfDay = () => {
-    const today = new Date();
-    const time = today.getHours();
-  
-    if (time >= 0 && time < 12) {
-      return "morning";
-    } else if (time >= 12 && time < 17) {
-      return "afternoon";
-    } else if (time >= 17 && time <= 23) {
-      return "evening";
-    }
-  }
+  const technologiesList = projects.technologies;
 
   return (
-    <div className="About">
-      <Link className="navToHome-link" to="/">back to <span id="home">home</span></Link>
-      <h1 className="page-title">about</h1>
-      <img className="blob" src={orangeBlob} alt="orange blob"/>
+    <div id="About" className="About">
+      <main>
+        <h2>About Me</h2>
 
-      <section className="About-main">
-        <h1 className="page-title">hello!</h1>
-        <br />
-        <h2 className="subtitle">I'm Mayra. Developer and Problem Solver.</h2>
-        <p className="About-paragraph">
-          <br />
-          Nothing makes me happier than coding a solution and doing it well. As a recent graduate of Austin Coding Academy and their  internship program, I've learned there are endless possibilites to finding an answer, and that's what makes it so exciting.  
-          <br />
-          <br />
-          I found my way to web development through some small exposure during my time in the fashion, retail and customer service industries. At Stitch Fix, I awed at the projects the engineers worked on. In my following roles at Beautifully Loved and Wildflowers Boutique, I created and updated websites first-hand. Now, I'm developing sites and apps from scratch for the people around me, and the best part of it all is that I'm helping to make a difference with work I enjoy. 
-          <br />
-          <br />
-          Feel free to browse around and let me know if there is anything I can do to help you, too. Thanks for stopping by - enjoy your {timeOfDay()}!
+        <p>
+          Hi! I'm Mayra* and I work as a front end web developer. I enjoy building products that solve real problems and making the web easy to use for all. 
         </p>
+        <p>
+          Currently, I'm a teacher assistant and tutor at Austin Coding Academy, where I help students learn the fundamentals of full stack programming. This includes support in education and debugging for all course levels. I also work on a freelance basis and continuously learn to improve my skillset. 
+        </p>
+        <p>
+          Previously, I was involved in the nonprofit and client services industries, where I focused on the development of online presence and messaging. I enjoy helping others and volunteer my services when possible.
+        </p>
+
+        <p>*In case you're curious, my name is pronounced MY-dah &#9786;</p>
+
+        <h2>Technologies</h2>
+        <ul>
+          {technologiesList.map((tech, i) => {
+            return (
+              <li key={i}>{tech}</li>
+            )
+          })}
+        </ul>
+      </main>
+
+      <article>
+        <p>&#128075; howdy</p>
         <br />
-
-        <button className="resume-button">
-          <a className="resume-link" href="https://drive.google.com/file/d/1upL8jNltdKqMXG274feqXHGeJfYUuIyX/view?usp=share_link" target="blank">My Resumé</a>
-          <span className="arrow">&#8599;</span>
-        </button>
-      </section>
-
-      <img className="About-img" src={profilePic} alt="Mayra Tellez" />
+        I'm an independent Software Engineer located in Austin, Texas. 
+        <br /> 
+        <br /> 
+        I study, teach, and code the web.
+      </article>
 
     </div>
   )

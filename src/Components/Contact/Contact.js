@@ -1,47 +1,37 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import purpleBlob from "../../images/purpleBlob.svg";
 import "./Contact.css";
 
 const Contact = () => {
+
   return (
-    <div className="Contact">
-      <Link className="navToHome-link" to="/">back to <span id="home">home</span></Link>
+    <div id="Contact" className="Contact">
+      <h2>Get in Touch</h2>
+      <p>My inbox is always open for questions, ideas or project proposals.</p>
 
-      <div className="signoff-container">
-        <p className="signoff">Email or message me anytime. Talk soon!</p>
-      </div>
+      <section>
 
-      <div className="grand-info-container">
-        <div className="info-container info-container-one">
-          <p className="contact-method">Email</p>
-          <div className="email-container">
-            <div className="email">mayranicoletellez@gmail.com</div>
+        <article>
+          <h3>Copy Email</h3>
+          <p>mayranicoletellez@gmail.com</p>
+        </article>
+
+        <article>
+          <h3>Connect with Me</h3>
+          <div className="socials">
+            <a href="https://github.com/mayra-tellez">
+              GitHub 
+              <i class="fa-brands fa-github fa-xl"></i>          
+            </a>
+            <a href="https://www.linkedin.com/in/mayra-tellez/">
+              LinkedIn 
+              <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
           </div>
-        </div>
+        </article>
 
-        <div className="info-container info-container-two">
-          <p className="contact-method">Social</p> 
-          <div className="socials-container">
-            <span className="social-with-arrow">
-              <a className="social" href="https://www.linkedin.com/in/mayra-tellez/" target="blank">
-                LinkedIn
-              </a>
-              <span className="arrow">&#8599;</span>
-            </span>
-
-            <span className="social-with-arrow">
-              <a className="social" href="https://github.com/mayra-tellez" target="blank">Github</a>            
-              <span className="arrow">&#8599;</span>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <h1 className="page-title">contact</h1>
-
-      <img className="blob" src={purpleBlob} alt="purple blob"/>
-
+      </section>
     </div>
   );
 }
