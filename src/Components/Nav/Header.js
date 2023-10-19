@@ -2,20 +2,35 @@ import { Link } from "react-router-dom";
 import "./Nav.css";
 
 const Header = () => {
+
+  const navigateClick = (e) => {
+    e.preventDefault()
+    window.scrollTo({
+      top: document.querySelector("#Contact").offsetTop,
+      behavior: "smooth"
+    })
+  }
+
   return (
+
     <header>
-    <Link to="/" className="link">
-      <h3 className="initials">
-        <span id="M">M</span>
-        <span id="T">T</span>
-      </h3>
-    </Link>
-    <nav>
-      <Link to="/projects">Projects</Link>
-      <Link to="/about">About</Link>
-      <a href="https://drive.google.com/file/d/16DrnpUuT90FjTkEQad46STrS7eqSbZ_7/view?export/pdf" target="blank">Resume</a>
-    </nav>
+      <nav>
+        <div className="nav-box">
+          <Link className="nav-link" to="/">
+            <p className="nav-item">Home</p>
+          </Link>
+        </div>
+        
+        <div id="contact" className="nav-box">
+          <Link className="nav-link" to="" onClick={(e) => navigateClick(e)}>
+            <p className="nav-item">Contact</p>
+          </Link>
+        </div>
+      </nav>
+
+      <a className="resume-button" href="https://drive.google.com/file/d/1upL8jNltdKqMXG274feqXHGeJfYUuIyX/view?usp=share_link" target="blank">View Resumé</a>
     </header>
+
   )
 }
 
