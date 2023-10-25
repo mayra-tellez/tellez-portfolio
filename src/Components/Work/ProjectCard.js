@@ -1,5 +1,6 @@
 import "./ProjectCard.css";
 import projectImgShape from "../../images/showcase.svg"
+import sunburst from "../../images/sunburst.png"
 
 const ProjectCard = (props) => {
   const { name, code_url, live_url, tags, description, image_path, image_alt } = props.project;
@@ -29,15 +30,31 @@ const ProjectCard = (props) => {
           <h3 className="project-name">{name}</h3>
 
           <div className="links-container">
-            <div className="link-and-arrow-pair">
-              <a className="link" href={code_url} target="blank">See Code</a>
-              {/* <span className="arrow">&#8599;</span> */}
-            </div>
+            {
+              code_url ? 
+              <div className="link-and-arrow-pair">
+                <a className="link" href={code_url} target="blank">See Code</a>
+                {/* <span className="arrow">&#8599;</span> */}
+              </div> :
+              null
+            }
 
-            <div className="link-and-arrow-pair">
-              <a className="link" href={live_url} target="blank">Visit Site</a>
-              {/* <span className="arrow">&#8599;</span> */}
-            </div>
+            {
+              live_url ? 
+              <div className="link-and-arrow-pair">
+                <a className="link" href={live_url} target="blank">Visit Site</a>
+                {/* <span className="arrow">&#8599;</span> */}
+              </div> :
+              null
+            }
+
+            {
+              !live_url &&
+              <div className="link-and-arrow-pair">
+                <a className="link" href="https://knowbility.org/programs/air" target="blank">More Info</a>
+                {/* <span className="arrow">&#8599;</span> */}
+              </div>
+            }
           </div>
         </div>
 
@@ -50,6 +67,16 @@ const ProjectCard = (props) => {
           return <li className="tag" key={i}>{tag}</li>
         })}
       </ul>
+      
+      {
+        !live_url &&
+        <div className="sun-plus-text-container">
+          <div className="sun-plus-text">
+            <img id="sunburst" alt="" src={sunburst}></img>
+            <p>In <br /> progress!</p>
+          </div>
+        </div>
+      }
 
     </div>
   );

@@ -26,6 +26,15 @@
       "description": "My final capstone project for Austin Coding Academy. Billy is a full stack web app that helps users track and manage their monthly bills, quickly navigate to their banks' home pages, and find bank locations nearby.",
       "image_path": "billyDashboard",
       "image_alt": "Billy App dashboard thumbnail"
+    },
+    {
+      "name": "AIR Competition",
+      "code_url": "",
+      "live_url": "",
+      "tags": ["Accessibility", "WordPress", "CSS"],
+      "description": "The Accessible Internet Rally (AIR) is a competition to raise awareness for global web accessibility. With a team of 6, our goal is to provide our clients with a brand new, fully accessible website.",
+      "image_path": "airProject",
+      "image_alt": "Accessible Internet Rally project thumbnail"
     }
   ],
   "technologies": [

@@ -20,6 +20,7 @@
   4.5px 5px 0 0 #2e424d,
   5.5px 6px 0 0 #2e424d;
   font-family: var(--font-body-primary);
+  position: relative;
 }
 
 .project-name {
@@ -47,6 +48,18 @@
   /* position: relative; */
   z-index: 1;
   filter: grayscale(100%);
+}
+
+#sunburst {
+  height: 125px;
+  width: 125px;
+  border: none;
+  border-radius: 0;
+  filter: grayscale(0);
+  /* position: absolute; */
+  top: -10%;
+  left: 52%;
+  z-index: 2;
 }
 
 .img-overlay {
@@ -109,6 +122,29 @@
   padding: 7px 12px;
   list-style: none;
   background-color: #ebddf7;
+}
+
+.sun-plus-text-container {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.sun-plus-text {
+  height: 125px;
+  width: 125px;
+  position: relative;
+  text-align: center;
+  transform: rotate(-15deg);
+}
+
+.sun-plus-text > p {
+  margin: 0;
+  position: absolute;
+  top: 27%;
+  left: 15%;
+  font-family: var(--font-heading-primary);
+  font-size: 20px;
 }
 
 
