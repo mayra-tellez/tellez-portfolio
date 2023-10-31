@@ -71,25 +71,64 @@
 }
 
 /* ---------- responsive ---------- */
-/* ----- mobile S ----- */
-@media (min-width: 320px) {
+/* ----- mobile & tablet ----- */
+@media (max-width: 1023px) {
+  .About {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
 
+  .About h2 {
+    /* font-size: 1.5rem; */
+  }
+
+  .About main {
+    margin: 0 5%;
+  }
+
+  .About p {
+    width: 85%;
+    font-size: 1.5rem;
+  }
+
+  .About article {
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 10% 5%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    position: static;
+  }
+
+  .About ul {
+    width: 90%;
+  }
+
+  .About li {
+    margin: 0 6% 5% 0;
+  }
 }
+
 
 /* ----- laptop ----- */
 @media (min-width: 1024px) {
-
+  .About article {
+    width: 45%;
+  }
 }
+
 
 /* ----- large laptop ----- */
 @media (min-width: 1440px) {
   .About {
-    padding: 5% 13% 2% 20%;
+    padding-left: 10%;
   }
 
   .About article {
-    width: 43%;
-    height: 31rem;
+    width: 40%;
+    margin-right: 5%;
   }
 
   .About ul {

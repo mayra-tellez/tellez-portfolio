@@ -21,7 +21,6 @@
 
 .Contact > section {
   height: 100%;
-  width: 65%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,6 +40,7 @@
 }
 
 .Contact p {
+  margin-bottom: 0;
   font-size: 1.4rem;
 }
 
@@ -89,9 +89,41 @@
 
 
 /* ---------- responsive ---------- */
+/* ----- mobile & tablet ----- */
+@media (max-width: 1023px) {
+  .Contact {
+    padding-top: 0;
+    padding-bottom: 10%;
+    justify-content: space-evenly;
+  }
+
+  .Contact > p {
+    margin: 0 5%;
+    text-align: center;
+  }
+
+  .Contact > section {
+    height: fit-content;
+    flex-direction: column;
+  }
+}
+
+
+/* ----- laptop ----- */
+@media (min-width: 1024px) {
+  .Contact > section {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+
 /* ----- large laptop ----- */
 @media (min-width: 1440px) {
   .Contact > section {
-    width: 55%;
+    width: 65%;
+    flex-direction: row;
   }
 }

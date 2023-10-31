@@ -20,7 +20,7 @@ const Footer = () => {
         <h1 className="Landing-name">Mayra <br/> Téllez</h1>
         {/* &mdash; -- dash symbol */}
         <p>
-         This site is admiringly inspired by the portfolio of <a href="https://fossheim.io/" target="blank" rel="noopener">Sarah L. Fossheim</a>. &mdash; Being that I'm not a UI/UX Designer (although I'm interested to learn), I decided to showcase my skills in mockup-to-reality creation for my portfolio. Some adjustments have been made due to content.
+          I wanted to showcase my skills in mockup-to-reality creation for my personal portfolio, so this site is admiringly inspired by <a href="https://fossheim.io/" target="blank" rel="noopener">Sarah L. Fossheim</a>. Some adjustments have been made due to content.
         </p>
       </div>
 

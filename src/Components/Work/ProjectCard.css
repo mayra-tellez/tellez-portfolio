@@ -9,10 +9,6 @@
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
-  /* position: relative; */
-  /* background-color: rgba(167, 173, 253, 0.425); */
-  /* text-align: end; */
-  /* box-shadow: var(--extended-border); */
   box-shadow: 0.5px 1px 0 0 #2e424d,
   1.5px 2px 0 0 #2e424d,
   2.5px 3px 0 0 #2e424d,
@@ -149,6 +145,20 @@
 
 
 /* ---------- responsive ---------- */
+/* ----- mobile & tablet ----- */
+@media (max-width: 1023px) {
+  .ProjectCard {
+    width: 100%;
+    border: 1px dashed #986cbb;
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    box-shadow: none;
+  }
+}
+
+
 /* ----- large laptop ----- */
 @media (min-width: 1440px) {
   .ProjectCard {
