@@ -122,25 +122,29 @@
 
 .sun-plus-text-container {
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   right: 5%;
 }
 
 .sun-plus-text {
-  height: 125px;
-  width: 125px;
+  height: 100px;
+  width: 100px;
   position: relative;
   text-align: center;
   transform: rotate(-15deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sun-plus-text > p {
   margin: 0;
   position: absolute;
-  top: 27%;
-  left: 15%;
+  /* top: 27%;
+  left: 25%; */
   font-family: var(--font-heading-primary);
   font-size: 20px;
+  z-index: 2;
 }
 
 

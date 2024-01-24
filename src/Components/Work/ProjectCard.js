@@ -69,11 +69,11 @@ const ProjectCard = (props) => {
       </ul>
       
       {
-        !live_url &&
+        !code_url &&
         <div className="sun-plus-text-container">
           <div className="sun-plus-text">
             <img id="sunburst" alt="" src={sunburst}></img>
-            <p>In <br /> progress!</p>
+            <p>AIR!</p>
           </div>
         </div>
       }

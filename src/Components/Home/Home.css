@@ -1,5 +1,9 @@
-.Home {
+html {
   width: 100%;
+}
+
+.Home {
+  /* width: 100%; */
   min-height: fit-content;
   display: flex;
   flex-direction: column;
@@ -10,23 +14,6 @@
 main {
   width: 100%;
 }
-
-/* #social-sidebar {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-#email-sidebar {
-  grid-column: 3/4;
-  grid-row: 2/3;
-} */
-
-/* .Home > main {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 
 .intro > p {
   margin-top: 0;

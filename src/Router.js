@@ -2,10 +2,10 @@ import React from "react";
 import { Route, Routes } from "react-router";
 
 import Home from "./Components/Home/Home";
-import Projects from "./Components/Projects/Projects";
-import Work from "./Components/Work/Work";
-import About from "./Components/About/About";
-import Contact from "./Components/Contact/Contact";
+// import Projects from "./Components/Projects/Projects";
+// import Work from "./Components/Work/Work";
+// import About from "./Components/About/About";
+// import Contact from "./Components/Contact/Contact";
 
 const Router = () => {
   return (

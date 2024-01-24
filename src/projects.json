@@ -1,11 +1,19 @@
 {
   "projects": [
     {
+      "name": "Think Outside the Vox",
+      "live_url": "https://thinkoutsidethevox.org/",
+      "tags": ["Accessibility", "CSS", "JavaScript", "WordPress"],
+      "description": "In order to raise awareness for global web accessibility, myself and two other developers designed and built a fully accessible and screen-reader friendly website for a nonprofit in need.",
+      "image_path": "vox",
+      "image_alt": "Think Outside the Vox website thumbnail"
+    },    
+    {
       "name": "Course Tracker",
       "code_url": "https://github.com/theMVPshop/gantt-app",
       "live_url": "https://gantt-app.vercel.app/",
       "tags": ["React", "SQL", "DHTMLX Gantt", "CSS", "REST API"],
-      "description": "A full stack web application built for the directors of Austin Coding Academy during my internship at Zollege. With a team of 4-5 developers, our goal was to deliver a useful tool for them to record and keep track of past and ongoing bootcamp courses.",
+      "description": "A full stack web application built for the directors of Austin Coding Academy during my internship at Zollege. With a team of 4 developers, our goal was to deliver a useful tool for them to record and keep track of past and ongoing bootcamp courses.",
       "image_path": "courseTrackerDashboard",
       "image_alt": "Course Tracker thumbnail"
     },
@@ -14,7 +22,7 @@
       "code_url": "https://github.com/theMVPshop/landingpage",
       "live_url": "https://mayra-tellez.github.io/landingpage/html/landing.html",
       "tags": ["Bootstrap 5", "CSS", "HTML"],
-      "description": "A product site developed from a mockup design with a team of 5 for our internship at Zollege. I had ownership of the About page and its responsive format for a perfect layout on all screens.",
+      "description": "A product site developed from a mockup design with a team of 5 for our internship at Zollege. Our focus was on responsive design principles for a perfect layout on all screen sizes.",
       "image_path": "landingPageThumbnail",
       "image_alt": "Zospace landing page thumbnail"
     },
@@ -23,18 +31,9 @@
       "code_url": "https://github.com/mayra-tellez/bills-tracker",
       "live_url": "https://bills-tracker.vercel.app/",
       "tags": ["React", "Node.js", "Express", "SQL", "REST API"],
-      "description": "My final capstone project for Austin Coding Academy. Billy is a full stack web app that helps users track and manage their monthly bills, quickly navigate to their banks' home pages, and find bank locations nearby.",
+      "description": "Billy is a full stack web app that helps users track and manage their monthly bills, quickly navigate to their banks' home pages, and find bank locations nearby.",
       "image_path": "billyDashboard",
       "image_alt": "Billy App dashboard thumbnail"
-    },
-    {
-      "name": "AIR Competition",
-      "code_url": "",
-      "live_url": "",
-      "tags": ["Accessibility", "WordPress", "CSS"],
-      "description": "The Accessible Internet Rally (AIR) is a competition to raise awareness for global web accessibility. With a team of 6, our goal is to provide our clients with a brand new, fully accessible website.",
-      "image_path": "airProject",
-      "image_alt": "Accessible Internet Rally project thumbnail"
     }
   ],
   "technologies": [
@@ -44,6 +43,7 @@
     "React",
     "Node.js",
     "Express.js",
-    "MySQL"
+    "MySQL",
+    "Bootstrap"
   ]  
 }

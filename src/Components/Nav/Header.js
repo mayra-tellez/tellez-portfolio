@@ -26,9 +26,9 @@ const Header = () => {
             <p className="nav-item">Contact</p>
           </Link>
         </div>
+  
+        <a className="resume-button" href="https://drive.google.com/file/d/1vAZyX0yrAoDjYfCsDrFaVPD0-HkelOV5/view?usp=sharing"><span id="view">View</span> Resumé</a>
       </nav>
-
-      <a className="resume-button" href="https://drive.google.com/file/d/1VVIhlaIZaNKJByh0y8w05P6DYEBhd9Kb/view?usp=sharing"><span id="view">View</span> Resumé</a>
     </header>
 
   )

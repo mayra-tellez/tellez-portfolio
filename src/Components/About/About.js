@@ -10,16 +10,14 @@ const About = () => {
         <h2>About Me</h2>
 
         <p>
-          Hi! I'm Mayra* and I work as a front end web developer. I enjoy building products that solve real problems and making the web easy to use for all. 
+          Hi! I'm Mayra and the first question I'm always asked is, "How do you say that?" So, in case you're also wondering, here is my attempt at phonetic spelling: MY-dah. I work as a web developer with a focus on the front end and I enjoy building products that solve real problems. 
         </p>
         <p>
-          Currently, I'm a teacher assistant and tutor at Austin Coding Academy, where I help students learn the fundamentals of full stack programming. This includes support in education and debugging for all course levels. I also work on a freelance basis and continuously learn to improve my skillset. 
+          My passion for coding comes from being able to make a difference in peoples' lives. Currently, I'm a teacher assistant and tutor at Austin Coding Academy, where I help students learn the fundamentals of full stack programming. This includes support in education and debugging for all course levels. I also work on a freelance basis and continuously learn to improve my skillset. 
         </p>
         <p>
-          Previously, I was involved in the nonprofit and client services industries, where I focused on the development of online presence and messaging. I enjoy helping others and volunteer my services when possible.
+          Previously, I was involved in the nonprofit and client services industries, where I focused on the development of online presence and messaging. I continue to try to make a difference, help others and volunteer my services when possible!
         </p>
-
-        <p>*In case you're curious, my name is pronounced MY-dah &#9786;</p>
 
         <h2>Technologies</h2>
         <ul>
@@ -38,6 +36,9 @@ const About = () => {
         <br /> 
         <br /> 
         I study, teach, and code the web.
+        <br /> 
+        <br /> 
+        <p>&#9786;</p>
       </article>
 
     </div>
