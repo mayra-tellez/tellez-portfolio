@@ -10,10 +10,10 @@ const About = () => {
         <h2>About Me</h2>
 
         <p>
-          Hi! I'm Mayra and the first question I'm always asked is, "How do you say that?" So, in case you're also wondering, here is my attempt at phonetic spelling: MY-dah. I work as a web developer with a focus on the front end. My passion for coding comes from being able to make a difference in peoples' lives.
+          Hi! I'm Mayra and I work as a web developer with a focus on the front end. My passion for coding comes from being able to make a difference in peoples' lives.
         </p>
         <p>
-          Currently, I'm a teacher assistant and tutor at Austin Coding Academy, where I help students learn the fundamentals of full stack programming. This includes support in education and debugging for all course levels. I also work on a freelance basis to build products that solve real problems. 
+          Currently, I'm a teacher assistant and tutor at Austin Coding Academy, where I help students learn the fundamentals of full stack programming. This includes support in education and debugging for all course levels.
         </p>
         <p>
           Previously, I was involved in the nonprofit and client services industries, where I focused on the development of online presence and messaging. I continuously try to make a difference, help others and improve my skillset when possible!
@@ -38,7 +38,7 @@ const About = () => {
         I study, teach, and code the web.
         <br /> 
         <br /> 
-        <p>&#9786;</p>
+        <p>&#128187;</p>
       </article>
 
     </div>

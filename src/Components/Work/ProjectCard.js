@@ -73,7 +73,7 @@ const ProjectCard = (props) => {
         <div className="sun-plus-text-container">
           <div className="sun-plus-text">
             <img id="sunburst" alt="" src={sunburst}></img>
-            <p>AIR!</p>
+            <p>Ask me about AIR!</p>
           </div>
         </div>
       }
